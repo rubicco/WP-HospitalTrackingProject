@@ -41,6 +41,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            label1.Location = new System.Drawing.Point(28, 9);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(278, 73);
+            label1.TabIndex = 9;
+            label1.Text = "Hastane Takip Sistemine\r\nHoşgeldiniz!";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // hastaneButton
             // 
             this.hastaneButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -113,21 +124,9 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            label1.Location = new System.Drawing.Point(25, 9);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(281, 58);
-            label1.TabIndex = 9;
-            label1.Text = "Hastane Takip Sistemine\r\nHoşgeldiniz!";
-            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 510);
             this.Controls.Add(label1);
@@ -147,7 +146,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

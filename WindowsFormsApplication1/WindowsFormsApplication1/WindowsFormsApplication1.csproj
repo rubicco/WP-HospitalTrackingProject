@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HospitalPages\HospitalMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\HospitalMainPage.Designer.cs">
+      <DependentUpon>HospitalMainPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogInPages\DoctorLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="HospitalPages\HospitalMainPage.resx">
+      <DependentUpon>HospitalMainPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInPages\DoctorLoginForm.resx">
       <DependentUpon>DoctorLoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\S_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
