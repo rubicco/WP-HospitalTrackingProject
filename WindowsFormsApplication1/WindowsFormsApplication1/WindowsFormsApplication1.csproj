@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoctorPages\DoctorMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorPages\DoctorMainPage.Designer.cs">
+      <DependentUpon>DoctorMainPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogInPages\DoctorLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,7 @@
     <Compile Include="LogInPages\HospitalLoginForm.Designer.cs">
       <DependentUpon>HospitalLoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogInPages\LogInClass.cs" />
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +79,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DoctorPages\DoctorMainPage.resx">
+      <DependentUpon>DoctorMainPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogInPages\DoctorLoginForm.resx">
       <DependentUpon>DoctorLoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +125,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\S_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

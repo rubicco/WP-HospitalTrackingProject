@@ -22,5 +22,22 @@ namespace WindowsFormsApplication1.LogInPages
             Program.globalForm.Show();
             Dispose();
         }
+
+        private void girisButton_Click(object sender, EventArgs e)
+        {
+            String id = kullaniciAdiTextBox.Text;
+            String pw = parolaTextBox.Text;
+            LogInClass.checkEmptyTextBox(id,pw);
+            if (LogInClass.checkLogIn(id, pw))
+            {
+                DoctorPages.DoctorMainPage doctorMain = new DoctorPages.DoctorMainPage();
+                doctorMain.Show();
+                this.Dispose();
+            }
+
+            
+        }
+
+  
     }
 }
