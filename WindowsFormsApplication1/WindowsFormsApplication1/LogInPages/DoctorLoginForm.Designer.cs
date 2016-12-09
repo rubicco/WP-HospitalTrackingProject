@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace WindowsFormsApplication1.LogInPages
 {
-    partial class Form1
+    partial class DoctorLoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // DoctorLoginForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Name = "DoctorLoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DoctorLoginForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DoctorLoginForm_FormClosed);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
