@@ -20,7 +20,7 @@ namespace WindowsFormsApplication1.LogInPages
         private void HospitalLoginForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Program.globalForm.Show();
-            this.Close();
+            Dispose();
         }
     }
 }
