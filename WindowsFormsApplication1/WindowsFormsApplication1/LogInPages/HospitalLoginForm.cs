@@ -31,7 +31,14 @@ namespace WindowsFormsApplication1.LogInPages
                 return;
             }                
             if (parolaTextBox.Text == "")
+            {
                 MessageBox.Show("Şifre sahası boş bırakılamaz!", "Eksik Saha", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            HospitalPages.HospitalMainPage hospitalPage = new HospitalPages.HospitalMainPage();
+            hospitalPage.Show();
+            Dispose();
         }
     }
 }

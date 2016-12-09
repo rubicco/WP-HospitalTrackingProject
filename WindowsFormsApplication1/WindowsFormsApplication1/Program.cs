@@ -12,7 +12,6 @@ namespace WindowsFormsApplication1
         /// The main entry point for the application.
         /// </summary>
         public static Form globalForm;
-
         [STAThread]
         static void Main()
         {

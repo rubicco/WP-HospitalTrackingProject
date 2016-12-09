@@ -38,39 +38,36 @@
             // kullaniciAdiTextBox
             // 
             this.kullaniciAdiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.kullaniciAdiTextBox.Location = new System.Drawing.Point(160, 50);
-            this.kullaniciAdiTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kullaniciAdiTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.kullaniciAdiTextBox.Location = new System.Drawing.Point(120, 41);
             this.kullaniciAdiTextBox.Name = "kullaniciAdiTextBox";
-            this.kullaniciAdiTextBox.Size = new System.Drawing.Size(133, 22);
+            this.kullaniciAdiTextBox.Size = new System.Drawing.Size(100, 20);
             this.kullaniciAdiTextBox.TabIndex = 0;
             // 
             // parolaTextBox
             // 
             this.parolaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.parolaTextBox.Location = new System.Drawing.Point(160, 116);
-            this.parolaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.parolaTextBox.Location = new System.Drawing.Point(120, 94);
             this.parolaTextBox.Name = "parolaTextBox";
-            this.parolaTextBox.Size = new System.Drawing.Size(133, 22);
+            this.parolaTextBox.Size = new System.Drawing.Size(100, 20);
             this.parolaTextBox.TabIndex = 1;
             this.parolaTextBox.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(44, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 17);
+            this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Kullanıcı Adı:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(106, 119);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(80, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Parola:";
             // 
@@ -78,10 +75,9 @@
             // 
             this.girisButton.FlatAppearance.BorderSize = 3;
             this.girisButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.girisButton.Location = new System.Drawing.Point(160, 175);
-            this.girisButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.girisButton.Location = new System.Drawing.Point(120, 142);
             this.girisButton.Name = "girisButton";
-            this.girisButton.Size = new System.Drawing.Size(133, 41);
+            this.girisButton.Size = new System.Drawing.Size(100, 33);
             this.girisButton.TabIndex = 4;
             this.girisButton.Text = "GİRİŞ";
             this.girisButton.UseVisualStyleBackColor = true;
@@ -89,15 +85,16 @@
             // 
             // HospitalLoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 287);
+            this.ClientSize = new System.Drawing.Size(276, 233);
             this.Controls.Add(this.girisButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.parolaTextBox);
             this.Controls.Add(this.kullaniciAdiTextBox);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "HospitalLoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hastane Girişi";

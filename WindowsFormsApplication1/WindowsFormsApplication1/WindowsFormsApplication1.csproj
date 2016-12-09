@@ -46,11 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="DoctorPages\DoctorMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DoctorPages\DoctorMainPage.Designer.cs">
       <DependentUpon>DoctorMainPage.cs</DependentUpon>
+	</Compile>
+
+    <Compile Include="HospitalPages\HospitalMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\HospitalMainPage.Designer.cs">
+      <DependentUpon>HospitalMainPage.cs</DependentUpon>
+
     </Compile>
     <Compile Include="LogInPages\DoctorLoginForm.cs">
       <SubType>Form</SubType>
@@ -79,8 +88,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <EmbeddedResource Include="DoctorPages\DoctorMainPage.resx">
       <DependentUpon>DoctorMainPage.cs</DependentUpon>
+	</EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\HospitalMainPage.resx">
+      <DependentUpon>HospitalMainPage.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="LogInPages\DoctorLoginForm.resx">
       <DependentUpon>DoctorLoginForm.cs</DependentUpon>
