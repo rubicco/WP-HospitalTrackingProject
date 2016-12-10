@@ -46,20 +46,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="DoctorPages\DoctorMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DoctorPages\DoctorMainPage.Designer.cs">
       <DependentUpon>DoctorMainPage.cs</DependentUpon>
-	</Compile>
-
+    </Compile>
+    <Compile Include="HospitalPages\DoktorDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\DoktorDuzenle.Designer.cs">
+      <DependentUpon>DoktorDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPages\DoktorEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\DoktorEkle.Designer.cs">
+      <DependentUpon>DoktorEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPages\DoktorSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\DoktorSil.Designer.cs">
+      <DependentUpon>DoktorSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPages\HastaDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\HastaDuzenle.Designer.cs">
+      <DependentUpon>HastaDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPages\HastaKabul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\HastaKabul.Designer.cs">
+      <DependentUpon>HastaKabul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPages\HastaSilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\HastaSilme.Designer.cs">
+      <DependentUpon>HastaSilme.cs</DependentUpon>
+    </Compile>
     <Compile Include="HospitalPages\HospitalMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HospitalPages\HospitalMainPage.Designer.cs">
       <DependentUpon>HospitalMainPage.cs</DependentUpon>
-
+    </Compile>
+    <Compile Include="HospitalPages\PoliklinikEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\PoliklinikEkle.Designer.cs">
+      <DependentUpon>PoliklinikEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPages\PoliklinikSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\PoliklinikSil.Designer.cs">
+      <DependentUpon>PoliklinikSil.cs</DependentUpon>
     </Compile>
     <Compile Include="LogInPages\DoctorLoginForm.cs">
       <SubType>Form</SubType>
@@ -88,13 +133,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <EmbeddedResource Include="DoctorPages\DoctorMainPage.resx">
       <DependentUpon>DoctorMainPage.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\DoktorDuzenle.resx">
+      <DependentUpon>DoktorDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\DoktorEkle.resx">
+      <DependentUpon>DoktorEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\DoktorSil.resx">
+      <DependentUpon>DoktorSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\HastaDuzenle.resx">
+      <DependentUpon>HastaDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\HastaKabul.resx">
+      <DependentUpon>HastaKabul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\HastaSilme.resx">
+      <DependentUpon>HastaSilme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HospitalPages\HospitalMainPage.resx">
       <DependentUpon>HospitalMainPage.cs</DependentUpon>
-
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\PoliklinikEkle.resx">
+      <DependentUpon>PoliklinikEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\PoliklinikSil.resx">
+      <DependentUpon>PoliklinikSil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInPages\DoctorLoginForm.resx">
       <DependentUpon>DoctorLoginForm.cs</DependentUpon>
