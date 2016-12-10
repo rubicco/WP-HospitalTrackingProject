@@ -52,6 +52,24 @@
     <Compile Include="DoctorPages\DoctorMainPage.Designer.cs">
       <DependentUpon>DoctorMainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoctorPages\DoktorHastaBilgiPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorPages\DoktorHastaBilgiPage.Designer.cs">
+      <DependentUpon>DoktorHastaBilgiPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorPages\HastaMuayeneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorPages\HastaMuayeneForm.Designer.cs">
+      <DependentUpon>HastaMuayeneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorPages\MuayeneBilgiPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorPages\MuayeneBilgiPage.Designer.cs">
+      <DependentUpon>MuayeneBilgiPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="HospitalPages\DoktorDuzenle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +154,15 @@
     <EmbeddedResource Include="DoctorPages\DoctorMainPage.resx">
       <DependentUpon>DoctorMainPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoctorPages\DoktorHastaBilgiPage.resx">
+      <DependentUpon>DoktorHastaBilgiPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorPages\HastaMuayeneForm.resx">
+      <DependentUpon>HastaMuayeneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorPages\MuayeneBilgiPage.resx">
+      <DependentUpon>MuayeneBilgiPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HospitalPages\DoktorDuzenle.resx">
       <DependentUpon>DoktorDuzenle.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +239,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R_Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_underline.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
