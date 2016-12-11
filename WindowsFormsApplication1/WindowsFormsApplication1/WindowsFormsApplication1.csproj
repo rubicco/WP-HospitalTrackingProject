@@ -70,6 +70,7 @@
     <Compile Include="DoctorPages\MuayeneBilgiPage.Designer.cs">
       <DependentUpon>MuayeneBilgiPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="HospitalClass\MedicalExamination.cs" />
     <Compile Include="HospitalPages\DoktorDuzenle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +150,8 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonClass\Doctor.cs" />
+    <Compile Include="PersonClass\Patient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DoctorPages\DoctorMainPage.resx">
@@ -264,6 +267,7 @@
   <ItemGroup>
     <None Include="Resources\text_underline.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
