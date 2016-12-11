@@ -34,7 +34,8 @@ namespace WindowsFormsApplication1.Person
             this.cepNo = cepNo;
             this.isNo = isNo;
             this.adres = adres;
-            this.email = brans;
+            this.email = email;
+            this.brans = brans;
             this.unvan = unvan;
             this.poliklinikNo = poliklinikNo;
         }
