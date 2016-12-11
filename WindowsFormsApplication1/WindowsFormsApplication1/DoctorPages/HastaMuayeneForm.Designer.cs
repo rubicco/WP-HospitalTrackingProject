@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cinsiyetLabel = new System.Windows.Forms.Label();
+            this.tcLabel = new System.Windows.Forms.Label();
+            this.soyadLabel = new System.Windows.Forms.Label();
+            this.adLabel = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.label4 = new System.Windows.Forms.Label();
             this.iletisimGroupBox = new System.Windows.Forms.GroupBox();
+            this.adresLabel = new System.Windows.Forms.Label();
+            this.mailLabel = new System.Windows.Forms.Label();
+            this.isTelLabel = new System.Windows.Forms.Label();
+            this.cepTelLabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tarihLabel = new System.Windows.Forms.Label();
-            this.adLabel = new System.Windows.Forms.Label();
-            this.soyadLabel = new System.Windows.Forms.Label();
-            this.tcLabel = new System.Windows.Forms.Label();
-            this.cinsiyetLabel = new System.Windows.Forms.Label();
-            this.cepTelLabel = new System.Windows.Forms.Label();
-            this.isTelLabel = new System.Windows.Forms.Label();
-            this.mailLabel = new System.Windows.Forms.Label();
-            this.adresLabel = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.mNoLabel = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
@@ -61,6 +61,8 @@
             this.tetkiklerCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.label14 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.dogumTarihiLabel = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.iletisimGroupBox.SuspendLayout();
@@ -68,6 +70,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dogumTarihiLabel);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.cinsiyetLabel);
             this.groupBox1.Controls.Add(this.tcLabel);
             this.groupBox1.Controls.Add(this.soyadLabel);
@@ -82,6 +86,51 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kimlik Bilgileri";
+            // 
+            // cinsiyetLabel
+            // 
+            this.cinsiyetLabel.AutoSize = true;
+            this.cinsiyetLabel.Location = new System.Drawing.Point(118, 114);
+            this.cinsiyetLabel.Name = "cinsiyetLabel";
+            this.cinsiyetLabel.Size = new System.Drawing.Size(90, 17);
+            this.cinsiyetLabel.TabIndex = 10;
+            this.cinsiyetLabel.Text = "cinsiyetLabel";
+            // 
+            // tcLabel
+            // 
+            this.tcLabel.AutoSize = true;
+            this.tcLabel.Location = new System.Drawing.Point(118, 86);
+            this.tcLabel.Name = "tcLabel";
+            this.tcLabel.Size = new System.Drawing.Size(54, 17);
+            this.tcLabel.TabIndex = 9;
+            this.tcLabel.Text = "tcLabel";
+            // 
+            // soyadLabel
+            // 
+            this.soyadLabel.AutoSize = true;
+            this.soyadLabel.Location = new System.Drawing.Point(118, 57);
+            this.soyadLabel.Name = "soyadLabel";
+            this.soyadLabel.Size = new System.Drawing.Size(81, 17);
+            this.soyadLabel.TabIndex = 8;
+            this.soyadLabel.Text = "soyadLabel";
+            // 
+            // adLabel
+            // 
+            this.adLabel.AutoSize = true;
+            this.adLabel.Location = new System.Drawing.Point(118, 31);
+            this.adLabel.Name = "adLabel";
+            this.adLabel.Size = new System.Drawing.Size(59, 17);
+            this.adLabel.TabIndex = 7;
+            this.adLabel.Text = "adLabel";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(51, 114);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 17);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Cinsiyet:";
             // 
             // label1
             // 
@@ -109,15 +158,6 @@
             this.label3.Size = new System.Drawing.Size(92, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "TC Kimlik No:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(51, 114);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 17);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Cinsiyet:";
             // 
             // toolStrip1
             // 
@@ -173,6 +213,51 @@
             this.iletisimGroupBox.TabStop = false;
             this.iletisimGroupBox.Text = "İletişim Bilgileri";
             // 
+            // adresLabel
+            // 
+            this.adresLabel.AutoSize = true;
+            this.adresLabel.Location = new System.Drawing.Point(114, 114);
+            this.adresLabel.Name = "adresLabel";
+            this.adresLabel.Size = new System.Drawing.Size(79, 17);
+            this.adresLabel.TabIndex = 11;
+            this.adresLabel.Text = "adresLabel";
+            // 
+            // mailLabel
+            // 
+            this.mailLabel.AutoSize = true;
+            this.mailLabel.Location = new System.Drawing.Point(114, 86);
+            this.mailLabel.Name = "mailLabel";
+            this.mailLabel.Size = new System.Drawing.Size(68, 17);
+            this.mailLabel.TabIndex = 10;
+            this.mailLabel.Text = "mailLabel";
+            // 
+            // isTelLabel
+            // 
+            this.isTelLabel.AutoSize = true;
+            this.isTelLabel.Location = new System.Drawing.Point(114, 60);
+            this.isTelLabel.Name = "isTelLabel";
+            this.isTelLabel.Size = new System.Drawing.Size(73, 17);
+            this.isTelLabel.TabIndex = 9;
+            this.isTelLabel.Text = "isTelLabel";
+            // 
+            // cepTelLabel
+            // 
+            this.cepTelLabel.AutoSize = true;
+            this.cepTelLabel.Location = new System.Drawing.Point(114, 29);
+            this.cepTelLabel.Name = "cepTelLabel";
+            this.cepTelLabel.Size = new System.Drawing.Size(86, 17);
+            this.cepTelLabel.TabIndex = 8;
+            this.cepTelLabel.Text = "cepTelLabel";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(19, 86);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(89, 17);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "email Adresi:";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -200,15 +285,6 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Adres:";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 86);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "email Adresi:";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -226,78 +302,6 @@
             this.tarihLabel.Size = new System.Drawing.Size(71, 17);
             this.tarihLabel.TabIndex = 12;
             this.tarihLabel.Text = "tarihLabel";
-            // 
-            // adLabel
-            // 
-            this.adLabel.AutoSize = true;
-            this.adLabel.Location = new System.Drawing.Point(118, 31);
-            this.adLabel.Name = "adLabel";
-            this.adLabel.Size = new System.Drawing.Size(59, 17);
-            this.adLabel.TabIndex = 7;
-            this.adLabel.Text = "adLabel";
-            // 
-            // soyadLabel
-            // 
-            this.soyadLabel.AutoSize = true;
-            this.soyadLabel.Location = new System.Drawing.Point(118, 57);
-            this.soyadLabel.Name = "soyadLabel";
-            this.soyadLabel.Size = new System.Drawing.Size(81, 17);
-            this.soyadLabel.TabIndex = 8;
-            this.soyadLabel.Text = "soyadLabel";
-            // 
-            // tcLabel
-            // 
-            this.tcLabel.AutoSize = true;
-            this.tcLabel.Location = new System.Drawing.Point(118, 86);
-            this.tcLabel.Name = "tcLabel";
-            this.tcLabel.Size = new System.Drawing.Size(54, 17);
-            this.tcLabel.TabIndex = 9;
-            this.tcLabel.Text = "tcLabel";
-            // 
-            // cinsiyetLabel
-            // 
-            this.cinsiyetLabel.AutoSize = true;
-            this.cinsiyetLabel.Location = new System.Drawing.Point(118, 114);
-            this.cinsiyetLabel.Name = "cinsiyetLabel";
-            this.cinsiyetLabel.Size = new System.Drawing.Size(90, 17);
-            this.cinsiyetLabel.TabIndex = 10;
-            this.cinsiyetLabel.Text = "cinsiyetLabel";
-            // 
-            // cepTelLabel
-            // 
-            this.cepTelLabel.AutoSize = true;
-            this.cepTelLabel.Location = new System.Drawing.Point(114, 29);
-            this.cepTelLabel.Name = "cepTelLabel";
-            this.cepTelLabel.Size = new System.Drawing.Size(86, 17);
-            this.cepTelLabel.TabIndex = 8;
-            this.cepTelLabel.Text = "cepTelLabel";
-            // 
-            // isTelLabel
-            // 
-            this.isTelLabel.AutoSize = true;
-            this.isTelLabel.Location = new System.Drawing.Point(114, 60);
-            this.isTelLabel.Name = "isTelLabel";
-            this.isTelLabel.Size = new System.Drawing.Size(73, 17);
-            this.isTelLabel.TabIndex = 9;
-            this.isTelLabel.Text = "isTelLabel";
-            // 
-            // mailLabel
-            // 
-            this.mailLabel.AutoSize = true;
-            this.mailLabel.Location = new System.Drawing.Point(114, 86);
-            this.mailLabel.Name = "mailLabel";
-            this.mailLabel.Size = new System.Drawing.Size(68, 17);
-            this.mailLabel.TabIndex = 10;
-            this.mailLabel.Text = "mailLabel";
-            // 
-            // adresLabel
-            // 
-            this.adresLabel.AutoSize = true;
-            this.adresLabel.Location = new System.Drawing.Point(114, 114);
-            this.adresLabel.Name = "adresLabel";
-            this.adresLabel.Size = new System.Drawing.Size(79, 17);
-            this.adresLabel.TabIndex = 11;
-            this.adresLabel.Text = "adresLabel";
             // 
             // label10
             // 
@@ -388,6 +392,24 @@
             this.listBox1.Size = new System.Drawing.Size(316, 116);
             this.listBox1.TabIndex = 22;
             // 
+            // dogumTarihiLabel
+            // 
+            this.dogumTarihiLabel.AutoSize = true;
+            this.dogumTarihiLabel.Location = new System.Drawing.Point(118, 144);
+            this.dogumTarihiLabel.Name = "dogumTarihiLabel";
+            this.dogumTarihiLabel.Size = new System.Drawing.Size(122, 17);
+            this.dogumTarihiLabel.TabIndex = 14;
+            this.dogumTarihiLabel.Text = "dogumTarihiLabel";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(15, 144);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 17);
+            this.label15.TabIndex = 13;
+            this.label15.Text = "Doğum Tarihi:";
+            // 
             // HastaMuayeneForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -457,5 +479,7 @@
         private System.Windows.Forms.CheckedListBox tetkiklerCheckedListBox;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label dogumTarihiLabel;
+        private System.Windows.Forms.Label label15;
     }
 }

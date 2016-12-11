@@ -49,23 +49,25 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.HastaStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.label9 = new System.Windows.Forms.Label();
             this.muayenelerListView = new System.Windows.Forms.ListView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.boldToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.italicToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.underlineToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.HastaStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.dogumTarihiLabel = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.iletisimGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -165,7 +167,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dogumTarihiLabel);
             this.groupBox1.Controls.Add(this.cinsiyetLabel);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.tcLabel);
             this.groupBox1.Controls.Add(this.soyadLabel);
             this.groupBox1.Controls.Add(this.adLabel);
@@ -286,6 +290,23 @@
             this.tabPage1.Text = "Hasta Muayene Bilgileri";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(37, 17);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(177, 17);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Hastanın Tüm Muayeneleri";
+            // 
+            // muayenelerListView
+            // 
+            this.muayenelerListView.Location = new System.Drawing.Point(19, 47);
+            this.muayenelerListView.Name = "muayenelerListView";
+            this.muayenelerListView.Size = new System.Drawing.Size(793, 234);
+            this.muayenelerListView.TabIndex = 0;
+            this.muayenelerListView.UseCompatibleStateImageBehavior = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.toolStrip1);
@@ -296,23 +317,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Hasta Dosyası";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // HastaStatusStrip
-            // 
-            this.HastaStatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.HastaStatusStrip.Location = new System.Drawing.Point(0, 619);
-            this.HastaStatusStrip.Name = "HastaStatusStrip";
-            this.HastaStatusStrip.Size = new System.Drawing.Size(964, 22);
-            this.HastaStatusStrip.TabIndex = 15;
-            this.HastaStatusStrip.Text = "statusStrip1";
-            // 
-            // muayenelerListView
-            // 
-            this.muayenelerListView.Location = new System.Drawing.Point(19, 47);
-            this.muayenelerListView.Name = "muayenelerListView";
-            this.muayenelerListView.Size = new System.Drawing.Size(793, 234);
-            this.muayenelerListView.TabIndex = 0;
-            this.muayenelerListView.UseCompatibleStateImageBehavior = false;
             // 
             // toolStrip1
             // 
@@ -335,16 +339,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(823, 35);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 35);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
             // 
             // newToolStripButton
             // 
@@ -374,6 +368,11 @@
             this.printToolStripButton.Size = new System.Drawing.Size(24, 32);
             this.printToolStripButton.Text = "&Print";
             // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 35);
+            // 
             // helpToolStripButton
             // 
             this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -382,6 +381,11 @@
             this.helpToolStripButton.Name = "helpToolStripButton";
             this.helpToolStripButton.Size = new System.Drawing.Size(24, 32);
             this.helpToolStripButton.Text = "He&lp";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 35);
             // 
             // boldToolStripButton
             // 
@@ -425,14 +429,32 @@
             this.toolStripComboBox2.Name = "toolStripComboBox2";
             this.toolStripComboBox2.Size = new System.Drawing.Size(75, 35);
             // 
-            // label9
+            // HastaStatusStrip
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(37, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(177, 17);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Hastanın Tüm Muayeneleri";
+            this.HastaStatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.HastaStatusStrip.Location = new System.Drawing.Point(0, 619);
+            this.HastaStatusStrip.Name = "HastaStatusStrip";
+            this.HastaStatusStrip.Size = new System.Drawing.Size(964, 22);
+            this.HastaStatusStrip.TabIndex = 15;
+            this.HastaStatusStrip.Text = "statusStrip1";
+            // 
+            // dogumTarihiLabel
+            // 
+            this.dogumTarihiLabel.AutoSize = true;
+            this.dogumTarihiLabel.Location = new System.Drawing.Point(118, 147);
+            this.dogumTarihiLabel.Name = "dogumTarihiLabel";
+            this.dogumTarihiLabel.Size = new System.Drawing.Size(122, 17);
+            this.dogumTarihiLabel.TabIndex = 14;
+            this.dogumTarihiLabel.Text = "dogumTarihiLabel";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(15, 147);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(97, 17);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "Doğum Tarihi:";
             // 
             // DoktorHastaBilgiPage
             // 
@@ -502,5 +524,7 @@
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label dogumTarihiLabel;
+        private System.Windows.Forms.Label label11;
     }
 }
