@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1.HospitalPages
 {
-    public partial class HastaSilme : Form
+    public partial class MuayeneEkle : Form
     {
-        public HastaSilme()
+        public MuayeneEkle()
         {
             InitializeComponent();
         }

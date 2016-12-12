@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.hastaDogumTarihiDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.kadinRadioButton = new System.Windows.Forms.RadioButton();
             this.erkekRadioButton = new System.Windows.Forms.RadioButton();
@@ -63,6 +65,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.hastaDogumTarihiDateTimePicker);
+            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.emailTextBox);
@@ -89,6 +93,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(627, 328);
             this.panel1.TabIndex = 3;
+            // 
+            // hastaDogumTarihiDateTimePicker
+            // 
+            this.hastaDogumTarihiDateTimePicker.Location = new System.Drawing.Point(406, 227);
+            this.hastaDogumTarihiDateTimePicker.Name = "hastaDogumTarihiDateTimePicker";
+            this.hastaDogumTarihiDateTimePicker.Size = new System.Drawing.Size(209, 20);
+            this.hastaDogumTarihiDateTimePicker.TabIndex = 28;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(323, 230);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 13);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "Doğum Tarihi:";
             // 
             // panel2
             // 
@@ -174,11 +194,6 @@
             // poliklinikComboBox
             // 
             this.poliklinikComboBox.FormattingEnabled = true;
-            this.poliklinikComboBox.Items.AddRange(new object[] {
-            "-",
-            "SGK",
-            "Bağ-Kur",
-            "Emekli Sandığı"});
             this.poliklinikComboBox.Location = new System.Drawing.Point(406, 131);
             this.poliklinikComboBox.Name = "poliklinikComboBox";
             this.poliklinikComboBox.Size = new System.Drawing.Size(209, 21);
@@ -396,5 +411,7 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker hastaDogumTarihiDateTimePicker;
+        private System.Windows.Forms.Label label12;
     }
 }

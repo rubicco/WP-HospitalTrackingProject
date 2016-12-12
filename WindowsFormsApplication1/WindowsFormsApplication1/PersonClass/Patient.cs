@@ -33,6 +33,7 @@ namespace WindowsFormsApplication1.Person
             this.isNo = isNo;
             this.meslek = meslek;
             this.adres = adres;
+            this.email = email;
         }
     }
 }

@@ -32,6 +32,10 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.unvanTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bransTextBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.kadinRadioButton = new System.Windows.Forms.RadioButton();
             this.erkekRadioButton = new System.Windows.Forms.RadioButton();
@@ -52,10 +56,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.soyadTextBox = new System.Windows.Forms.TextBox();
             this.adTextBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.bransTextBox = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.unvanTextBox = new System.Windows.Forms.TextBox();
+            this.doktorDogumTarihiDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -99,6 +101,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.doktorDogumTarihiDateTimePicker);
+            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.unvanTextBox);
             this.panel1.Controls.Add(this.label6);
@@ -125,6 +129,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(627, 332);
             this.panel1.TabIndex = 6;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(347, 220);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Unvan:";
+            // 
+            // unvanTextBox
+            // 
+            this.unvanTextBox.Location = new System.Drawing.Point(406, 217);
+            this.unvanTextBox.Name = "unvanTextBox";
+            this.unvanTextBox.Size = new System.Drawing.Size(209, 20);
+            this.unvanTextBox.TabIndex = 29;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(352, 183);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Branş:";
+            // 
+            // bransTextBox
+            // 
+            this.bransTextBox.Location = new System.Drawing.Point(406, 180);
+            this.bransTextBox.Name = "bransTextBox";
+            this.bransTextBox.Size = new System.Drawing.Size(209, 20);
+            this.bransTextBox.TabIndex = 27;
             // 
             // panel2
             // 
@@ -306,37 +342,21 @@
             this.adTextBox.Size = new System.Drawing.Size(187, 20);
             this.adTextBox.TabIndex = 0;
             // 
-            // label6
+            // doktorDogumTarihiDateTimePicker
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(352, 183);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Branş:";
+            this.doktorDogumTarihiDateTimePicker.Location = new System.Drawing.Point(114, 256);
+            this.doktorDogumTarihiDateTimePicker.Name = "doktorDogumTarihiDateTimePicker";
+            this.doktorDogumTarihiDateTimePicker.Size = new System.Drawing.Size(209, 20);
+            this.doktorDogumTarihiDateTimePicker.TabIndex = 32;
             // 
-            // bransTextBox
+            // label12
             // 
-            this.bransTextBox.Location = new System.Drawing.Point(406, 180);
-            this.bransTextBox.Name = "bransTextBox";
-            this.bransTextBox.Size = new System.Drawing.Size(209, 20);
-            this.bransTextBox.TabIndex = 27;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(347, 220);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 13);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Unvan:";
-            // 
-            // unvanTextBox
-            // 
-            this.unvanTextBox.Location = new System.Drawing.Point(406, 217);
-            this.unvanTextBox.Name = "unvanTextBox";
-            this.unvanTextBox.Size = new System.Drawing.Size(209, 20);
-            this.unvanTextBox.TabIndex = 29;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(31, 259);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 13);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Doğum Tarihi:";
             // 
             // DoktorEkle
             // 
@@ -389,5 +409,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox soyadTextBox;
         private System.Windows.Forms.TextBox adTextBox;
+        private System.Windows.Forms.DateTimePicker doktorDogumTarihiDateTimePicker;
+        private System.Windows.Forms.Label label12;
     }
 }

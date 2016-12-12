@@ -38,11 +38,6 @@ namespace WindowsFormsApplication1.HospitalPages
             hastaKabulFormAcma();
         }
 
-        private void hastaSilmeButton_Click(object sender, EventArgs e)
-        {
-            hastaSilmeFormAcma();
-        }
-
         private void hastaEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             hastaKabulFormAcma();
@@ -52,16 +47,6 @@ namespace WindowsFormsApplication1.HospitalPages
         {
             HastaKabul hastaKabulForm = new HastaKabul();
             hastaKabulForm.ShowDialog();
-        }
-        private void hastaSilmeFormAcma()
-        {
-            HastaSilme hastaSilmeForm = new HastaSilme();
-            hastaSilmeForm.ShowDialog();
-        }
-
-        private void hastaSilmeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            hastaSilmeFormAcma();
         }
 
         private void hastaDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -158,6 +143,22 @@ namespace WindowsFormsApplication1.HospitalPages
         {
             PoliklinikEkle poliklinikEkleForm = new PoliklinikEkle();
             poliklinikEkleForm.ShowDialog();
+        }
+
+        private void muayeneEkleButton_Click(object sender, EventArgs e)
+        {
+            muayeneEkleFormAcma();
+        }
+
+        private void muayeneEkleFormAcma()
+        {
+            MuayeneEkle muayeneEkleForm = new MuayeneEkle();
+            muayeneEkleForm.ShowDialog();
+        }
+
+        private void muayeneEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            muayeneEkleFormAcma();
         }
     }
 }

@@ -71,6 +71,7 @@
       <DependentUpon>MuayeneBilgiPage.cs</DependentUpon>
     </Compile>
     <Compile Include="HospitalClass\MedicalExamination.cs" />
+    <Compile Include="HospitalClass\Poliklinik.cs" />
     <Compile Include="HospitalPages\DoktorDuzenle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,17 +102,17 @@
     <Compile Include="HospitalPages\HastaKabul.Designer.cs">
       <DependentUpon>HastaKabul.cs</DependentUpon>
     </Compile>
-    <Compile Include="HospitalPages\HastaSilme.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HospitalPages\HastaSilme.Designer.cs">
-      <DependentUpon>HastaSilme.cs</DependentUpon>
-    </Compile>
     <Compile Include="HospitalPages\HospitalMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HospitalPages\HospitalMainPage.Designer.cs">
       <DependentUpon>HospitalMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalPages\MuayeneEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\MuayeneEkle.Designer.cs">
+      <DependentUpon>MuayeneEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="HospitalPages\PoliklinikEkle.cs">
       <SubType>Form</SubType>
@@ -187,11 +188,11 @@
     <EmbeddedResource Include="HospitalPages\HastaKabul.resx">
       <DependentUpon>HastaKabul.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HospitalPages\HastaSilme.resx">
-      <DependentUpon>HastaSilme.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="HospitalPages\HospitalMainPage.resx">
       <DependentUpon>HospitalMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\MuayeneEkle.resx">
+      <DependentUpon>MuayeneEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HospitalPages\PoliklinikEkle.resx">
       <DependentUpon>PoliklinikEkle.cs</DependentUpon>
