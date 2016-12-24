@@ -47,6 +47,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.kimlikGroupBox = new System.Windows.Forms.GroupBox();
+            this.dogumTarihiLabel = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.cinsiyetLabel = new System.Windows.Forms.Label();
             this.tcLabel = new System.Windows.Forms.Label();
             this.soyadLabel = new System.Windows.Forms.Label();
@@ -61,8 +63,6 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tumHastalarListBox = new System.Windows.Forms.ListBox();
-            this.dogumTarihiLabel = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.bransGroupBox.SuspendLayout();
@@ -274,6 +274,24 @@
             this.kimlikGroupBox.TabStop = false;
             this.kimlikGroupBox.Text = "Kimlik Bilgileri";
             // 
+            // dogumTarihiLabel
+            // 
+            this.dogumTarihiLabel.AutoSize = true;
+            this.dogumTarihiLabel.Location = new System.Drawing.Point(119, 141);
+            this.dogumTarihiLabel.Name = "dogumTarihiLabel";
+            this.dogumTarihiLabel.Size = new System.Drawing.Size(122, 17);
+            this.dogumTarihiLabel.TabIndex = 16;
+            this.dogumTarihiLabel.Text = "dogumTarihiLabel";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(16, 141);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(97, 17);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Doğum Tarihi:";
+            // 
             // cinsiyetLabel
             // 
             this.cinsiyetLabel.AutoSize = true;
@@ -361,7 +379,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(702, 567);
+            this.tabPage2.Size = new System.Drawing.Size(702, 584);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mevcut Hastalar";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -389,7 +407,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(702, 567);
+            this.tabPage3.Size = new System.Drawing.Size(702, 584);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Tüm Hastalar";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -402,24 +420,6 @@
             this.tumHastalarListBox.Name = "tumHastalarListBox";
             this.tumHastalarListBox.Size = new System.Drawing.Size(565, 452);
             this.tumHastalarListBox.TabIndex = 0;
-            // 
-            // dogumTarihiLabel
-            // 
-            this.dogumTarihiLabel.AutoSize = true;
-            this.dogumTarihiLabel.Location = new System.Drawing.Point(119, 141);
-            this.dogumTarihiLabel.Name = "dogumTarihiLabel";
-            this.dogumTarihiLabel.Size = new System.Drawing.Size(122, 17);
-            this.dogumTarihiLabel.TabIndex = 16;
-            this.dogumTarihiLabel.Text = "dogumTarihiLabel";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(16, 141);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(97, 17);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "Doğum Tarihi:";
             // 
             // DoctorMainPage
             // 
