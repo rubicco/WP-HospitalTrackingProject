@@ -21,13 +21,14 @@ namespace WindowsFormsApplication1
             conn.Open();
         }
 
-        public static void execQuery(string query)
+        public static void execQuery(String query)
         {
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
             cmd.CommandText = query;
             cmd.CommandType = CommandType.Text;
-            dr = cmd.ExecuteReader();            
+            dr = cmd.ExecuteReader();
+            dr.Read();
         }
 
         public void connection()

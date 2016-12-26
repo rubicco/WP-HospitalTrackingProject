@@ -32,6 +32,7 @@
             this.hastaİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hastaEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hastaDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.muayeneEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,13 +55,12 @@
             this.doktorSilButton = new System.Windows.Forms.Button();
             this.doktorEkleButton = new System.Windows.Forms.Button();
             this.hastaKabulTabPage = new System.Windows.Forms.TabPage();
+            this.muayeneEkleButton = new System.Windows.Forms.Button();
             this.hastaDuzenleButton = new System.Windows.Forms.Button();
             this.hastaKabulButton = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.hastaSayisiStatusStripLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.muayeneEkleButton = new System.Windows.Forms.Button();
-            this.muayeneEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.poliklinikTabPage.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -96,16 +96,23 @@
             // hastaEkleToolStripMenuItem
             // 
             this.hastaEkleToolStripMenuItem.Name = "hastaEkleToolStripMenuItem";
-            this.hastaEkleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.hastaEkleToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.hastaEkleToolStripMenuItem.Text = "Hasta Kabul";
             this.hastaEkleToolStripMenuItem.Click += new System.EventHandler(this.hastaEkleToolStripMenuItem_Click);
             // 
             // hastaDüzenleToolStripMenuItem
             // 
             this.hastaDüzenleToolStripMenuItem.Name = "hastaDüzenleToolStripMenuItem";
-            this.hastaDüzenleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.hastaDüzenleToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.hastaDüzenleToolStripMenuItem.Text = "Hasta Düzenle";
             this.hastaDüzenleToolStripMenuItem.Click += new System.EventHandler(this.hastaDüzenleToolStripMenuItem_Click);
+            // 
+            // muayeneEkleToolStripMenuItem
+            // 
+            this.muayeneEkleToolStripMenuItem.Name = "muayeneEkleToolStripMenuItem";
+            this.muayeneEkleToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.muayeneEkleToolStripMenuItem.Text = "Muayene Ekle";
+            this.muayeneEkleToolStripMenuItem.Click += new System.EventHandler(this.muayeneEkleToolStripMenuItem_Click);
             // 
             // doktorİşlemleriToolStripMenuItem
             // 
@@ -327,10 +334,21 @@
             this.hastaKabulTabPage.Text = "Hasta İşlemleri";
             this.hastaKabulTabPage.UseVisualStyleBackColor = true;
             // 
+            // muayeneEkleButton
+            // 
+            this.muayeneEkleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.muayeneEkleButton.Location = new System.Drawing.Point(395, 27);
+            this.muayeneEkleButton.Name = "muayeneEkleButton";
+            this.muayeneEkleButton.Size = new System.Drawing.Size(111, 62);
+            this.muayeneEkleButton.TabIndex = 6;
+            this.muayeneEkleButton.Text = "MUAYENE EKLE";
+            this.muayeneEkleButton.UseVisualStyleBackColor = true;
+            this.muayeneEkleButton.Click += new System.EventHandler(this.muayeneEkleButton_Click);
+            // 
             // hastaDuzenleButton
             // 
             this.hastaDuzenleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hastaDuzenleButton.Location = new System.Drawing.Point(216, 27);
+            this.hastaDuzenleButton.Location = new System.Drawing.Point(219, 27);
             this.hastaDuzenleButton.Name = "hastaDuzenleButton";
             this.hastaDuzenleButton.Size = new System.Drawing.Size(111, 62);
             this.hastaDuzenleButton.TabIndex = 5;
@@ -341,7 +359,7 @@
             // hastaKabulButton
             // 
             this.hastaKabulButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hastaKabulButton.Location = new System.Drawing.Point(29, 27);
+            this.hastaKabulButton.Location = new System.Drawing.Point(41, 27);
             this.hastaKabulButton.Name = "hastaKabulButton";
             this.hastaKabulButton.Size = new System.Drawing.Size(111, 62);
             this.hastaKabulButton.TabIndex = 3;
@@ -375,24 +393,6 @@
             this.hastaSayisiStatusStripLabel.Name = "hastaSayisiStatusStripLabel";
             this.hastaSayisiStatusStripLabel.Size = new System.Drawing.Size(12, 17);
             this.hastaSayisiStatusStripLabel.Text = "-";
-            // 
-            // muayeneEkleButton
-            // 
-            this.muayeneEkleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.muayeneEkleButton.Location = new System.Drawing.Point(407, 27);
-            this.muayeneEkleButton.Name = "muayeneEkleButton";
-            this.muayeneEkleButton.Size = new System.Drawing.Size(111, 62);
-            this.muayeneEkleButton.TabIndex = 6;
-            this.muayeneEkleButton.Text = "MUAYENE EKLE";
-            this.muayeneEkleButton.UseVisualStyleBackColor = true;
-            this.muayeneEkleButton.Click += new System.EventHandler(this.muayeneEkleButton_Click);
-            // 
-            // muayeneEkleToolStripMenuItem
-            // 
-            this.muayeneEkleToolStripMenuItem.Name = "muayeneEkleToolStripMenuItem";
-            this.muayeneEkleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.muayeneEkleToolStripMenuItem.Text = "Muayene Ekle";
-            this.muayeneEkleToolStripMenuItem.Click += new System.EventHandler(this.muayeneEkleToolStripMenuItem_Click);
             // 
             // HospitalMainPage
             // 
