@@ -36,12 +36,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.muayeneSikayetTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.muayeneTarihiDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.muayeneDoktorListBox = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.muayeneTarihiDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.muayeneSikayetTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +81,7 @@
             this.saveToolStripButton.Size = new System.Drawing.Size(53, 53);
             this.saveToolStripButton.Text = "&Save";
             this.saveToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // muayeneEkleTCKimlikTextBox
             // 
@@ -94,15 +95,16 @@
             // muayeneEklePoliklinikComboBox
             // 
             this.muayeneEklePoliklinikComboBox.FormattingEnabled = true;
-            this.muayeneEklePoliklinikComboBox.Location = new System.Drawing.Point(128, 211);
+            this.muayeneEklePoliklinikComboBox.Location = new System.Drawing.Point(128, 104);
             this.muayeneEklePoliklinikComboBox.Name = "muayeneEklePoliklinikComboBox";
             this.muayeneEklePoliklinikComboBox.Size = new System.Drawing.Size(209, 21);
             this.muayeneEklePoliklinikComboBox.TabIndex = 18;
+            this.muayeneEklePoliklinikComboBox.SelectedIndexChanged += new System.EventHandler(this.muayeneEklePoliklinikComboBox_SelectedIndexChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(71, 214);
+            this.label10.Location = new System.Drawing.Point(71, 107);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 13);
             this.label10.TabIndex = 17;
@@ -134,22 +136,31 @@
             this.panel1.Size = new System.Drawing.Size(430, 350);
             this.panel1.TabIndex = 6;
             // 
-            // label2
+            // muayeneDoktorListBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(77, 247);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Şikayet:";
+            this.muayeneDoktorListBox.FormattingEnabled = true;
+            this.muayeneDoktorListBox.Location = new System.Drawing.Point(128, 140);
+            this.muayeneDoktorListBox.Name = "muayeneDoktorListBox";
+            this.muayeneDoktorListBox.ScrollAlwaysVisible = true;
+            this.muayeneDoktorListBox.Size = new System.Drawing.Size(209, 95);
+            this.muayeneDoktorListBox.TabIndex = 29;
             // 
-            // muayeneSikayetTextBox
+            // label5
             // 
-            this.muayeneSikayetTextBox.Location = new System.Drawing.Point(128, 247);
-            this.muayeneSikayetTextBox.Multiline = true;
-            this.muayeneSikayetTextBox.Name = "muayeneSikayetTextBox";
-            this.muayeneSikayetTextBox.Size = new System.Drawing.Size(209, 76);
-            this.muayeneSikayetTextBox.TabIndex = 25;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(80, 140);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Doktor:";
+            // 
+            // muayeneTarihiDateTimePicker
+            // 
+            this.muayeneTarihiDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.muayeneTarihiDateTimePicker.Location = new System.Drawing.Point(128, 67);
+            this.muayeneTarihiDateTimePicker.Name = "muayeneTarihiDateTimePicker";
+            this.muayeneTarihiDateTimePicker.Size = new System.Drawing.Size(209, 20);
+            this.muayeneTarihiDateTimePicker.TabIndex = 27;
             // 
             // label3
             // 
@@ -160,30 +171,22 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "Muayene Tarihi:";
             // 
-            // muayeneTarihiDateTimePicker
+            // muayeneSikayetTextBox
             // 
-            this.muayeneTarihiDateTimePicker.Location = new System.Drawing.Point(128, 67);
-            this.muayeneTarihiDateTimePicker.Name = "muayeneTarihiDateTimePicker";
-            this.muayeneTarihiDateTimePicker.Size = new System.Drawing.Size(209, 20);
-            this.muayeneTarihiDateTimePicker.TabIndex = 27;
+            this.muayeneSikayetTextBox.Location = new System.Drawing.Point(128, 247);
+            this.muayeneSikayetTextBox.Multiline = true;
+            this.muayeneSikayetTextBox.Name = "muayeneSikayetTextBox";
+            this.muayeneSikayetTextBox.Size = new System.Drawing.Size(209, 76);
+            this.muayeneSikayetTextBox.TabIndex = 25;
             // 
-            // label5
+            // label2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Doktor:";
-            // 
-            // muayeneDoktorListBox
-            // 
-            this.muayeneDoktorListBox.FormattingEnabled = true;
-            this.muayeneDoktorListBox.Location = new System.Drawing.Point(128, 100);
-            this.muayeneDoktorListBox.Name = "muayeneDoktorListBox";
-            this.muayeneDoktorListBox.ScrollAlwaysVisible = true;
-            this.muayeneDoktorListBox.Size = new System.Drawing.Size(209, 95);
-            this.muayeneDoktorListBox.TabIndex = 29;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(77, 247);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Şikayet:";
             // 
             // MuayeneEkle
             // 
@@ -195,6 +198,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "MuayeneEkle";
             this.Text = "Muayene Ekle";
+            this.Load += new System.EventHandler(this.MuayeneEkle_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

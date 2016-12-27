@@ -32,6 +32,8 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.doktorDogumTarihiDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.unvanTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,8 +58,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.soyadTextBox = new System.Windows.Forms.TextBox();
             this.adTextBox = new System.Windows.Forms.TextBox();
-            this.doktorDogumTarihiDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -98,6 +98,7 @@
             this.saveToolStripButton.Size = new System.Drawing.Size(53, 53);
             this.saveToolStripButton.Text = "&Save";
             this.saveToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // panel1
             // 
@@ -130,14 +131,32 @@
             this.panel1.Size = new System.Drawing.Size(627, 332);
             this.panel1.TabIndex = 6;
             // 
+            // doktorDogumTarihiDateTimePicker
+            // 
+            this.doktorDogumTarihiDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.doktorDogumTarihiDateTimePicker.Location = new System.Drawing.Point(114, 256);
+            this.doktorDogumTarihiDateTimePicker.Name = "doktorDogumTarihiDateTimePicker";
+            this.doktorDogumTarihiDateTimePicker.Size = new System.Drawing.Size(209, 20);
+            this.doktorDogumTarihiDateTimePicker.TabIndex = 32;
+            this.doktorDogumTarihiDateTimePicker.Value = new System.DateTime(2016, 12, 27, 22, 51, 21, 0);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(31, 259);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(73, 13);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Doğum Tarihi:";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(347, 220);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.Size = new System.Drawing.Size(49, 13);
             this.label8.TabIndex = 30;
-            this.label8.Text = "Unvan:";
+            this.label8.Text = "* Unvan:";
             // 
             // unvanTextBox
             // 
@@ -151,9 +170,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(352, 183);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 28;
-            this.label6.Text = "Branş:";
+            this.label6.Text = "* Branş:";
             // 
             // bransTextBox
             // 
@@ -198,9 +217,9 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(61, 89);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 13);
+            this.label13.Size = new System.Drawing.Size(53, 13);
             this.label13.TabIndex = 25;
-            this.label13.Text = "Cinsiyet:";
+            this.label13.Text = "* Cinsiyet:";
             // 
             // emailTextBox
             // 
@@ -248,9 +267,9 @@
             this.poliklinikComboBox.FormattingEnabled = true;
             this.poliklinikComboBox.Items.AddRange(new object[] {
             "-",
-            "SGK",
-            "Bağ-Kur",
-            "Emekli Sandığı"});
+            "KBB",
+            "Göz",
+            "Cildiye"});
             this.poliklinikComboBox.Location = new System.Drawing.Point(406, 131);
             this.poliklinikComboBox.Name = "poliklinikComboBox";
             this.poliklinikComboBox.Size = new System.Drawing.Size(209, 21);
@@ -261,9 +280,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(338, 134);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 13);
+            this.label10.Size = new System.Drawing.Size(58, 13);
             this.label10.TabIndex = 17;
-            this.label10.Text = "Poliklinik:";
+            this.label10.Text = "* Poliklinik:";
             // 
             // label9
             // 
@@ -306,27 +325,27 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(31, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "TC Kimlik No:";
+            this.label4.Text = "* TC Kimlik No:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(62, 59);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Soyad:";
+            this.label3.Text = "* Soyad:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(79, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Ad:";
+            this.label2.Text = "* Ad:";
             // 
             // soyadTextBox
             // 
@@ -341,22 +360,6 @@
             this.adTextBox.Name = "adTextBox";
             this.adTextBox.Size = new System.Drawing.Size(187, 20);
             this.adTextBox.TabIndex = 0;
-            // 
-            // doktorDogumTarihiDateTimePicker
-            // 
-            this.doktorDogumTarihiDateTimePicker.Location = new System.Drawing.Point(114, 256);
-            this.doktorDogumTarihiDateTimePicker.Name = "doktorDogumTarihiDateTimePicker";
-            this.doktorDogumTarihiDateTimePicker.Size = new System.Drawing.Size(209, 20);
-            this.doktorDogumTarihiDateTimePicker.TabIndex = 32;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(31, 259);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 13);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Doğum Tarihi:";
             // 
             // DoktorEkle
             // 

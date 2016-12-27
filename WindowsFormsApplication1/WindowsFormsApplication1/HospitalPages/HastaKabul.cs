@@ -48,15 +48,11 @@ namespace WindowsFormsApplication1.HospitalPages
             DbConnection.connect();
             DbConnection.execQuery("select hasta_no from system_table");
             //DbConnection.dr.Read();
-            int hasta_no = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
-            
+            int hasta_no = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());           
             String query = String.Format("insert into HASTA(HASTA_ID, AD, SOYAD, TC_KIMLIK,CINSIYET,DOGUM_TARIHI,CEP_NO,IS_NO,MESLEK,ADRES,EMAIL) VALUES({0},'{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", hasta_no, ad, soyad, TCkimlik, cinsiyet, dTarihi, cepTel, isTel, meslek, adres, email);
-            MessageBox.Show(query);
             DbConnection.execQuery(query);
-
             hasta_no++;
             DbConnection.execQuery("UPDATE SYSTEM_TABLE SET HASTA_NO=" + hasta_no);
-
             Dispose();
         }
     }
