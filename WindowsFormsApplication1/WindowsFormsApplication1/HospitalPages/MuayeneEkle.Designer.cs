@@ -139,7 +139,9 @@
             // muayeneDoktorListBox
             // 
             this.muayeneDoktorListBox.FormattingEnabled = true;
+
             this.muayeneDoktorListBox.Location = new System.Drawing.Point(128, 140);
+
             this.muayeneDoktorListBox.Name = "muayeneDoktorListBox";
             this.muayeneDoktorListBox.ScrollAlwaysVisible = true;
             this.muayeneDoktorListBox.Size = new System.Drawing.Size(209, 95);
@@ -156,6 +158,7 @@
             // 
             // muayeneTarihiDateTimePicker
             // 
+
             this.muayeneTarihiDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.muayeneTarihiDateTimePicker.Location = new System.Drawing.Point(128, 67);
             this.muayeneTarihiDateTimePicker.Name = "muayeneTarihiDateTimePicker";
