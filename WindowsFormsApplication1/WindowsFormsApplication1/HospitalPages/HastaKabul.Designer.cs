@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.hastaDogumTarihiDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.cinsiyetPanel = new System.Windows.Forms.Panel();
             this.kadinRadioButton = new System.Windows.Forms.RadioButton();
             this.erkekRadioButton = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
@@ -40,8 +40,6 @@
             this.isTelTextBox = new System.Windows.Forms.MaskedTextBox();
             this.cepTelTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.poliklinikComboBox = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.sosyalGuvenceComboBox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.adresTextBox = new System.Windows.Forms.TextBox();
@@ -59,7 +57,7 @@
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.cinsiyetPanel.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,15 +65,13 @@
             // 
             this.panel1.Controls.Add(this.hastaDogumTarihiDateTimePicker);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.cinsiyetPanel);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.emailTextBox);
             this.panel1.Controls.Add(this.TCKimlikNoTextBox);
             this.panel1.Controls.Add(this.isTelTextBox);
             this.panel1.Controls.Add(this.cepTelTextBox);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.poliklinikComboBox);
-            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.sosyalGuvenceComboBox);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.adresTextBox);
@@ -96,28 +92,30 @@
             // 
             // hastaDogumTarihiDateTimePicker
             // 
+            this.hastaDogumTarihiDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.hastaDogumTarihiDateTimePicker.Location = new System.Drawing.Point(406, 227);
             this.hastaDogumTarihiDateTimePicker.Name = "hastaDogumTarihiDateTimePicker";
             this.hastaDogumTarihiDateTimePicker.Size = new System.Drawing.Size(209, 20);
             this.hastaDogumTarihiDateTimePicker.TabIndex = 28;
+            this.hastaDogumTarihiDateTimePicker.Value = new System.DateTime(2016, 12, 27, 0, 0, 0, 0);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(323, 230);
+            this.label12.Location = new System.Drawing.Point(315, 233);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(73, 13);
+            this.label12.Size = new System.Drawing.Size(77, 13);
             this.label12.TabIndex = 27;
-            this.label12.Text = "Doğum Tarihi:";
+            this.label12.Text = "*Doğum Tarihi:";
             // 
-            // panel2
+            // cinsiyetPanel
             // 
-            this.panel2.Controls.Add(this.kadinRadioButton);
-            this.panel2.Controls.Add(this.erkekRadioButton);
-            this.panel2.Location = new System.Drawing.Point(114, 83);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(165, 28);
-            this.panel2.TabIndex = 26;
+            this.cinsiyetPanel.Controls.Add(this.kadinRadioButton);
+            this.cinsiyetPanel.Controls.Add(this.erkekRadioButton);
+            this.cinsiyetPanel.Location = new System.Drawing.Point(114, 83);
+            this.cinsiyetPanel.Name = "cinsiyetPanel";
+            this.cinsiyetPanel.Size = new System.Drawing.Size(165, 28);
+            this.cinsiyetPanel.TabIndex = 26;
             // 
             // kadinRadioButton
             // 
@@ -144,11 +142,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(61, 89);
+            this.label13.Location = new System.Drawing.Point(53, 89);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 13);
+            this.label13.Size = new System.Drawing.Size(53, 13);
             this.label13.TabIndex = 25;
-            this.label13.Text = "Cinsiyet:";
+            this.label13.Text = "* Cinsiyet:";
             // 
             // emailTextBox
             // 
@@ -191,23 +189,6 @@
             this.label11.TabIndex = 19;
             this.label11.Text = "E-mail Adresi:";
             // 
-            // poliklinikComboBox
-            // 
-            this.poliklinikComboBox.FormattingEnabled = true;
-            this.poliklinikComboBox.Location = new System.Drawing.Point(406, 131);
-            this.poliklinikComboBox.Name = "poliklinikComboBox";
-            this.poliklinikComboBox.Size = new System.Drawing.Size(209, 21);
-            this.poliklinikComboBox.TabIndex = 18;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(342, 134);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 13);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Poliklinik:";
-            // 
             // sosyalGuvenceComboBox
             // 
             this.sosyalGuvenceComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -227,9 +208,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(355, 23);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
+            this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 15;
-            this.label9.Text = "Adres:";
+            this.label9.Text = "* Adres:";
             // 
             // adresTextBox
             // 
@@ -243,11 +224,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 262);
+            this.label8.Location = new System.Drawing.Point(10, 262);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 13);
+            this.label8.Size = new System.Drawing.Size(92, 13);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Sosyal Güvence:";
+            this.label8.Text = "*Sosyal Güvence:";
             // 
             // label7
             // 
@@ -281,27 +262,27 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(31, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "TC Kimlik No:";
+            this.label4.Text = "* TC Kimlik No:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 59);
+            this.label3.Location = new System.Drawing.Point(55, 59);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Soyad:";
+            this.label3.Text = "* Soyad:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(79, 23);
+            this.label2.Location = new System.Drawing.Point(72, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Ad:";
+            this.label2.Text = "* Ad:";
             // 
             // meslekTextBox
             // 
@@ -348,6 +329,7 @@
             this.saveToolStripButton.Size = new System.Drawing.Size(53, 53);
             this.saveToolStripButton.Text = "&Save";
             this.saveToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // label1
             // 
@@ -372,8 +354,8 @@
             this.Text = "HastaKabul";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.cinsiyetPanel.ResumeLayout(false);
+            this.cinsiyetPanel.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -384,7 +366,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel cinsiyetPanel;
         private System.Windows.Forms.RadioButton kadinRadioButton;
         private System.Windows.Forms.RadioButton erkekRadioButton;
         private System.Windows.Forms.Label label13;
@@ -393,8 +375,6 @@
         private System.Windows.Forms.MaskedTextBox isTelTextBox;
         private System.Windows.Forms.MaskedTextBox cepTelTextBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox poliklinikComboBox;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox sosyalGuvenceComboBox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox adresTextBox;

@@ -59,8 +59,8 @@
             this.hastaneButton.FlatAppearance.BorderSize = 3;
             this.hastaneButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hastaneButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.hastaneButton.Location = new System.Drawing.Point(248, 105);
-            this.hastaneButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hastaneButton.Location = new System.Drawing.Point(234, 105);
+            this.hastaneButton.Margin = new System.Windows.Forms.Padding(4);
             this.hastaneButton.Name = "hastaneButton";
             this.hastaneButton.Size = new System.Drawing.Size(160, 148);
             this.hastaneButton.TabIndex = 0;
@@ -74,8 +74,8 @@
             this.doktorButton.FlatAppearance.BorderSize = 3;
             this.doktorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.doktorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.doktorButton.Location = new System.Drawing.Point(248, 272);
-            this.doktorButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.doktorButton.Location = new System.Drawing.Point(234, 272);
+            this.doktorButton.Margin = new System.Windows.Forms.Padding(4);
             this.doktorButton.Name = "doktorButton";
             this.doktorButton.Size = new System.Drawing.Size(160, 148);
             this.doktorButton.TabIndex = 4;
@@ -89,8 +89,8 @@
             this.hastaButton.FlatAppearance.BorderSize = 3;
             this.hastaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hastaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.hastaButton.Location = new System.Drawing.Point(248, 447);
-            this.hastaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hastaButton.Location = new System.Drawing.Point(234, 447);
+            this.hastaButton.Margin = new System.Windows.Forms.Padding(4);
             this.hastaButton.Name = "hastaButton";
             this.hastaButton.Size = new System.Drawing.Size(160, 148);
             this.hastaButton.TabIndex = 5;
@@ -102,7 +102,7 @@
             // 
             this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.H_icon;
             this.pictureBox1.Location = new System.Drawing.Point(35, 105);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 148);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,7 +113,7 @@
             // 
             this.pictureBox3.Image = global::WindowsFormsApplication1.Properties.Resources.S_icon;
             this.pictureBox3.Location = new System.Drawing.Point(35, 447);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(160, 148);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,7 +124,7 @@
             // 
             this.pictureBox2.Image = global::WindowsFormsApplication1.Properties.Resources.D_icon;
             this.pictureBox2.Location = new System.Drawing.Point(35, 272);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(160, 148);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,9 +133,9 @@
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 628);
+            this.ClientSize = new System.Drawing.Size(430, 630);
             this.Controls.Add(label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
@@ -145,7 +145,7 @@
             this.Controls.Add(this.hastaneButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

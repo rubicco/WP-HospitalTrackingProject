@@ -22,5 +22,10 @@ namespace WindowsFormsApplication1.LogInPages
             Program.globalForm.Show();
             Dispose();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

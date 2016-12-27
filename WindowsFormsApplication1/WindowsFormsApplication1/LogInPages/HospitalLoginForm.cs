@@ -22,14 +22,14 @@ namespace WindowsFormsApplication1.LogInPages
             Program.globalForm.Show();
             Dispose();
         }
-
+        
         private void girisButton_Click(object sender, EventArgs e)
         {
             if (kullaniciAdiTextBox.Text == "")
             {
                 MessageBox.Show("Kullanıcı adı sahası boş bırakılamaz!", "Eksik Saha", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }                
+            }
             if (parolaTextBox.Text == "")
             {
                 MessageBox.Show("Şifre sahası boş bırakılamaz!", "Eksik Saha", MessageBoxButtons.OK, MessageBoxIcon.Warning);

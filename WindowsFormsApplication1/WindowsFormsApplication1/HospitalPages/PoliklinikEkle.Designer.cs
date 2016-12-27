@@ -29,15 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.poliklinikAdiTextBox = new System.Windows.Forms.TextBox();
-            this.poliklinikBolumuTextBox = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.poliklinikIDTextBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -45,34 +41,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 48);
+            this.label1.Location = new System.Drawing.Point(26, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Poliklinik Adı:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Bölümü:";
-            // 
             // poliklinikAdiTextBox
             // 
-            this.poliklinikAdiTextBox.Location = new System.Drawing.Point(93, 45);
+            this.poliklinikAdiTextBox.Location = new System.Drawing.Point(112, 16);
             this.poliklinikAdiTextBox.Name = "poliklinikAdiTextBox";
             this.poliklinikAdiTextBox.Size = new System.Drawing.Size(142, 20);
             this.poliklinikAdiTextBox.TabIndex = 2;
-            // 
-            // poliklinikBolumuTextBox
-            // 
-            this.poliklinikBolumuTextBox.Location = new System.Drawing.Point(93, 85);
-            this.poliklinikBolumuTextBox.Name = "poliklinikBolumuTextBox";
-            this.poliklinikBolumuTextBox.Size = new System.Drawing.Size(142, 20);
-            this.poliklinikBolumuTextBox.TabIndex = 3;
             // 
             // toolStrip1
             // 
@@ -98,18 +78,15 @@
             this.saveToolStripButton.Size = new System.Drawing.Size(53, 53);
             this.saveToolStripButton.Text = "&Save";
             this.saveToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.poliklinikIDTextBox);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.poliklinikAdiTextBox);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.poliklinikBolumuTextBox);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(28, 81);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(282, 121);
+            this.panel1.Size = new System.Drawing.Size(282, 52);
             this.panel1.TabIndex = 9;
             // 
             // label3
@@ -123,27 +100,11 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Poliklinik Ekleme";
             // 
-            // poliklinikIDTextBox
-            // 
-            this.poliklinikIDTextBox.Location = new System.Drawing.Point(93, 6);
-            this.poliklinikIDTextBox.Name = "poliklinikIDTextBox";
-            this.poliklinikIDTextBox.Size = new System.Drawing.Size(142, 20);
-            this.poliklinikIDTextBox.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Poliklinik ID:";
-            // 
             // PoliklinikEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 246);
+            this.ClientSize = new System.Drawing.Size(353, 159);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
@@ -161,14 +122,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox poliklinikAdiTextBox;
-        private System.Windows.Forms.TextBox poliklinikBolumuTextBox;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton saveToolStripButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox poliklinikIDTextBox;
-        private System.Windows.Forms.Label label4;
     }
 }

@@ -31,24 +31,13 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bransGroupBox = new System.Windows.Forms.GroupBox();
+            this.unvanLabel = new System.Windows.Forms.Label();
+            this.bransLabel = new System.Windows.Forms.Label();
+            this.poliklinikLabel = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.iletisimGroupBox = new System.Windows.Forms.GroupBox();
-            this.kimlikGroupBox = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cinsiyetLabel = new System.Windows.Forms.Label();
-            this.tcLabel = new System.Windows.Forms.Label();
-            this.soyadLabel = new System.Windows.Forms.Label();
-            this.adLabel = new System.Windows.Forms.Label();
             this.adresLabel = new System.Windows.Forms.Label();
             this.mailLabel = new System.Windows.Forms.Label();
             this.isTelLabel = new System.Windows.Forms.Label();
@@ -57,9 +46,22 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.poliklinikLabel = new System.Windows.Forms.Label();
-            this.bransLabel = new System.Windows.Forms.Label();
-            this.unvanLabel = new System.Windows.Forms.Label();
+            this.kimlikGroupBox = new System.Windows.Forms.GroupBox();
+            this.dogumTarihiLabel = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cinsiyetLabel = new System.Windows.Forms.Label();
+            this.tcLabel = new System.Windows.Forms.Label();
+            this.soyadLabel = new System.Windows.Forms.Label();
+            this.adLabel = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tumHastalarListBox = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -78,7 +80,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(710, 596);
+            this.tabControl1.Size = new System.Drawing.Size(710, 613);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -90,7 +92,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(702, 567);
+            this.tabPage1.Size = new System.Drawing.Size(702, 584);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Doktor Bilgileri";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -103,12 +105,39 @@
             this.bransGroupBox.Controls.Add(this.label10);
             this.bransGroupBox.Controls.Add(this.label9);
             this.bransGroupBox.Controls.Add(this.label8);
-            this.bransGroupBox.Location = new System.Drawing.Point(26, 405);
+            this.bransGroupBox.Location = new System.Drawing.Point(23, 426);
             this.bransGroupBox.Name = "bransGroupBox";
             this.bransGroupBox.Size = new System.Drawing.Size(395, 133);
             this.bransGroupBox.TabIndex = 9;
             this.bransGroupBox.TabStop = false;
             this.bransGroupBox.Text = "Branş Bilgileri";
+            // 
+            // unvanLabel
+            // 
+            this.unvanLabel.AutoSize = true;
+            this.unvanLabel.Location = new System.Drawing.Point(114, 97);
+            this.unvanLabel.Name = "unvanLabel";
+            this.unvanLabel.Size = new System.Drawing.Size(82, 17);
+            this.unvanLabel.TabIndex = 5;
+            this.unvanLabel.Text = "unvanLabel";
+            // 
+            // bransLabel
+            // 
+            this.bransLabel.AutoSize = true;
+            this.bransLabel.Location = new System.Drawing.Point(116, 66);
+            this.bransLabel.Name = "bransLabel";
+            this.bransLabel.Size = new System.Drawing.Size(79, 17);
+            this.bransLabel.TabIndex = 4;
+            this.bransLabel.Text = "bransLabel";
+            // 
+            // poliklinikLabel
+            // 
+            this.poliklinikLabel.AutoSize = true;
+            this.poliklinikLabel.Location = new System.Drawing.Point(114, 34);
+            this.poliklinikLabel.Name = "poliklinikLabel";
+            this.poliklinikLabel.Size = new System.Drawing.Size(96, 17);
+            this.poliklinikLabel.TabIndex = 3;
+            this.poliklinikLabel.Text = "poliklinikLabel";
             // 
             // label10
             // 
@@ -147,149 +176,12 @@
             this.iletisimGroupBox.Controls.Add(this.label6);
             this.iletisimGroupBox.Controls.Add(this.label7);
             this.iletisimGroupBox.Controls.Add(this.label13);
-            this.iletisimGroupBox.Location = new System.Drawing.Point(26, 192);
+            this.iletisimGroupBox.Location = new System.Drawing.Point(23, 222);
             this.iletisimGroupBox.Name = "iletisimGroupBox";
             this.iletisimGroupBox.Size = new System.Drawing.Size(395, 187);
             this.iletisimGroupBox.TabIndex = 8;
             this.iletisimGroupBox.TabStop = false;
             this.iletisimGroupBox.Text = "İletişim Bilgileri";
-            // 
-            // kimlikGroupBox
-            // 
-            this.kimlikGroupBox.Controls.Add(this.cinsiyetLabel);
-            this.kimlikGroupBox.Controls.Add(this.tcLabel);
-            this.kimlikGroupBox.Controls.Add(this.soyadLabel);
-            this.kimlikGroupBox.Controls.Add(this.adLabel);
-            this.kimlikGroupBox.Controls.Add(this.label12);
-            this.kimlikGroupBox.Controls.Add(this.label1);
-            this.kimlikGroupBox.Controls.Add(this.label2);
-            this.kimlikGroupBox.Controls.Add(this.label3);
-            this.kimlikGroupBox.Location = new System.Drawing.Point(23, 28);
-            this.kimlikGroupBox.Name = "kimlikGroupBox";
-            this.kimlikGroupBox.Size = new System.Drawing.Size(616, 143);
-            this.kimlikGroupBox.TabIndex = 7;
-            this.kimlikGroupBox.TabStop = false;
-            this.kimlikGroupBox.Text = "Kimlik Bilgileri";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ad:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Soyad:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 84);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "TC Kimlik No:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 192);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 17);
-            this.label5.TabIndex = 4;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.listView1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(702, 567);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mevcut Hastalar";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(21, 110);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(653, 422);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(16, 81);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(123, 17);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Bekleyen Hastalar";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.tumHastalarListBox);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(702, 567);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Tüm Hastalar";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(52, 113);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 17);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Cinsiyet:";
-            // 
-            // cinsiyetLabel
-            // 
-            this.cinsiyetLabel.AutoSize = true;
-            this.cinsiyetLabel.Location = new System.Drawing.Point(119, 113);
-            this.cinsiyetLabel.Name = "cinsiyetLabel";
-            this.cinsiyetLabel.Size = new System.Drawing.Size(90, 17);
-            this.cinsiyetLabel.TabIndex = 14;
-            this.cinsiyetLabel.Text = "cinsiyetLabel";
-            // 
-            // tcLabel
-            // 
-            this.tcLabel.AutoSize = true;
-            this.tcLabel.Location = new System.Drawing.Point(119, 84);
-            this.tcLabel.Name = "tcLabel";
-            this.tcLabel.Size = new System.Drawing.Size(54, 17);
-            this.tcLabel.TabIndex = 13;
-            this.tcLabel.Text = "tcLabel";
-            // 
-            // soyadLabel
-            // 
-            this.soyadLabel.AutoSize = true;
-            this.soyadLabel.Location = new System.Drawing.Point(119, 57);
-            this.soyadLabel.Name = "soyadLabel";
-            this.soyadLabel.Size = new System.Drawing.Size(81, 17);
-            this.soyadLabel.TabIndex = 12;
-            this.soyadLabel.Text = "soyadLabel";
-            // 
-            // adLabel
-            // 
-            this.adLabel.AutoSize = true;
-            this.adLabel.Location = new System.Drawing.Point(119, 29);
-            this.adLabel.Name = "adLabel";
-            this.adLabel.Size = new System.Drawing.Size(59, 17);
-            this.adLabel.TabIndex = 11;
-            this.adLabel.Text = "adLabel";
             // 
             // adresLabel
             // 
@@ -363,32 +255,162 @@
             this.label13.TabIndex = 14;
             this.label13.Text = "Adres:";
             // 
-            // poliklinikLabel
+            // kimlikGroupBox
             // 
-            this.poliklinikLabel.AutoSize = true;
-            this.poliklinikLabel.Location = new System.Drawing.Point(114, 34);
-            this.poliklinikLabel.Name = "poliklinikLabel";
-            this.poliklinikLabel.Size = new System.Drawing.Size(96, 17);
-            this.poliklinikLabel.TabIndex = 3;
-            this.poliklinikLabel.Text = "poliklinikLabel";
+            this.kimlikGroupBox.Controls.Add(this.dogumTarihiLabel);
+            this.kimlikGroupBox.Controls.Add(this.label14);
+            this.kimlikGroupBox.Controls.Add(this.cinsiyetLabel);
+            this.kimlikGroupBox.Controls.Add(this.tcLabel);
+            this.kimlikGroupBox.Controls.Add(this.soyadLabel);
+            this.kimlikGroupBox.Controls.Add(this.adLabel);
+            this.kimlikGroupBox.Controls.Add(this.label12);
+            this.kimlikGroupBox.Controls.Add(this.label1);
+            this.kimlikGroupBox.Controls.Add(this.label2);
+            this.kimlikGroupBox.Controls.Add(this.label3);
+            this.kimlikGroupBox.Location = new System.Drawing.Point(23, 28);
+            this.kimlikGroupBox.Name = "kimlikGroupBox";
+            this.kimlikGroupBox.Size = new System.Drawing.Size(616, 178);
+            this.kimlikGroupBox.TabIndex = 7;
+            this.kimlikGroupBox.TabStop = false;
+            this.kimlikGroupBox.Text = "Kimlik Bilgileri";
             // 
-            // bransLabel
+            // dogumTarihiLabel
             // 
-            this.bransLabel.AutoSize = true;
-            this.bransLabel.Location = new System.Drawing.Point(116, 66);
-            this.bransLabel.Name = "bransLabel";
-            this.bransLabel.Size = new System.Drawing.Size(79, 17);
-            this.bransLabel.TabIndex = 4;
-            this.bransLabel.Text = "bransLabel";
+            this.dogumTarihiLabel.AutoSize = true;
+            this.dogumTarihiLabel.Location = new System.Drawing.Point(119, 141);
+            this.dogumTarihiLabel.Name = "dogumTarihiLabel";
+            this.dogumTarihiLabel.Size = new System.Drawing.Size(122, 17);
+            this.dogumTarihiLabel.TabIndex = 16;
+            this.dogumTarihiLabel.Text = "dogumTarihiLabel";
             // 
-            // unvanLabel
+            // label14
             // 
-            this.unvanLabel.AutoSize = true;
-            this.unvanLabel.Location = new System.Drawing.Point(114, 97);
-            this.unvanLabel.Name = "unvanLabel";
-            this.unvanLabel.Size = new System.Drawing.Size(82, 17);
-            this.unvanLabel.TabIndex = 5;
-            this.unvanLabel.Text = "unvanLabel";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(16, 141);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(97, 17);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Doğum Tarihi:";
+            // 
+            // cinsiyetLabel
+            // 
+            this.cinsiyetLabel.AutoSize = true;
+            this.cinsiyetLabel.Location = new System.Drawing.Point(119, 113);
+            this.cinsiyetLabel.Name = "cinsiyetLabel";
+            this.cinsiyetLabel.Size = new System.Drawing.Size(90, 17);
+            this.cinsiyetLabel.TabIndex = 14;
+            this.cinsiyetLabel.Text = "cinsiyetLabel";
+            // 
+            // tcLabel
+            // 
+            this.tcLabel.AutoSize = true;
+            this.tcLabel.Location = new System.Drawing.Point(119, 84);
+            this.tcLabel.Name = "tcLabel";
+            this.tcLabel.Size = new System.Drawing.Size(54, 17);
+            this.tcLabel.TabIndex = 13;
+            this.tcLabel.Text = "tcLabel";
+            // 
+            // soyadLabel
+            // 
+            this.soyadLabel.AutoSize = true;
+            this.soyadLabel.Location = new System.Drawing.Point(119, 57);
+            this.soyadLabel.Name = "soyadLabel";
+            this.soyadLabel.Size = new System.Drawing.Size(81, 17);
+            this.soyadLabel.TabIndex = 12;
+            this.soyadLabel.Text = "soyadLabel";
+            // 
+            // adLabel
+            // 
+            this.adLabel.AutoSize = true;
+            this.adLabel.Location = new System.Drawing.Point(119, 29);
+            this.adLabel.Name = "adLabel";
+            this.adLabel.Size = new System.Drawing.Size(59, 17);
+            this.adLabel.TabIndex = 11;
+            this.adLabel.Text = "adLabel";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(52, 113);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 17);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Cinsiyet:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(84, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ad:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(61, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Soyad:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "TC Kimlik No:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(20, 192);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 17);
+            this.label5.TabIndex = 4;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.listView1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(702, 584);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mevcut Hastalar";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(16, 81);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(123, 17);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Bekleyen Hastalar";
+            // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(21, 110);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(653, 422);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.tumHastalarListBox);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(702, 584);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Tüm Hastalar";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tumHastalarListBox
             // 
@@ -403,7 +425,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 621);
+            this.ClientSize = new System.Drawing.Size(735, 638);
             this.Controls.Add(this.tabControl1);
             this.Name = "DoctorMainPage";
             this.Text = "Doktor Anasayfa";
@@ -459,5 +481,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ListBox tumHastalarListBox;
+        private System.Windows.Forms.Label dogumTarihiLabel;
+        private System.Windows.Forms.Label label14;
     }
 }
