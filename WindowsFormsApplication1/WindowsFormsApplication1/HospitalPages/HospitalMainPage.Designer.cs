@@ -35,24 +35,17 @@
             this.muayeneEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.doktorSilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doktorDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.poliklinikİşlemleriToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.poliklinikEkleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.poliklinikÇıkarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iletişimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.poliklinikTabPage = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.poliklinikButton = new System.Windows.Forms.Button();
-            this.poliklinikSilButton = new System.Windows.Forms.Button();
+            this.poliklinikBilgiButton = new System.Windows.Forms.Button();
             this.poliklinikEkleButton = new System.Windows.Forms.Button();
             this.doktorListTabPage = new System.Windows.Forms.TabPage();
             this.doktorDuzenleButton = new System.Windows.Forms.Button();
-            this.doktorSilButton = new System.Windows.Forms.Button();
             this.doktorEkleButton = new System.Windows.Forms.Button();
             this.hastaKabulTabPage = new System.Windows.Forms.TabPage();
             this.muayeneEkleButton = new System.Windows.Forms.Button();
@@ -61,9 +54,9 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.hastaSayisiStatusStripLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.poliklinikBilgisiGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.poliklinikTabPage.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.doktorListTabPage.SuspendLayout();
             this.hastaKabulTabPage.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -79,7 +72,7 @@
             this.yardımToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(624, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(434, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "hospitalMainPageMenuStrip";
             // 
@@ -96,21 +89,21 @@
             // hastaEkleToolStripMenuItem
             // 
             this.hastaEkleToolStripMenuItem.Name = "hastaEkleToolStripMenuItem";
-            this.hastaEkleToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.hastaEkleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.hastaEkleToolStripMenuItem.Text = "Hasta Kabul";
             this.hastaEkleToolStripMenuItem.Click += new System.EventHandler(this.hastaEkleToolStripMenuItem_Click);
             // 
             // hastaDüzenleToolStripMenuItem
             // 
             this.hastaDüzenleToolStripMenuItem.Name = "hastaDüzenleToolStripMenuItem";
-            this.hastaDüzenleToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.hastaDüzenleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.hastaDüzenleToolStripMenuItem.Text = "Hasta Düzenle";
             this.hastaDüzenleToolStripMenuItem.Click += new System.EventHandler(this.hastaDüzenleToolStripMenuItem_Click);
             // 
             // muayeneEkleToolStripMenuItem
             // 
             this.muayeneEkleToolStripMenuItem.Name = "muayeneEkleToolStripMenuItem";
-            this.muayeneEkleToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.muayeneEkleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.muayeneEkleToolStripMenuItem.Text = "Muayene Ekle";
             this.muayeneEkleToolStripMenuItem.Click += new System.EventHandler(this.muayeneEkleToolStripMenuItem_Click);
             // 
@@ -118,7 +111,6 @@
             // 
             this.doktorİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.doktorEkleToolStripMenuItem,
-            this.doktorSilToolStripMenuItem,
             this.doktorDüzenleToolStripMenuItem});
             this.doktorİşlemleriToolStripMenuItem.Name = "doktorİşlemleriToolStripMenuItem";
             this.doktorİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
@@ -131,13 +123,6 @@
             this.doktorEkleToolStripMenuItem.Text = "Doktor Ekle";
             this.doktorEkleToolStripMenuItem.Click += new System.EventHandler(this.doktorEkleToolStripMenuItem_Click);
             // 
-            // doktorSilToolStripMenuItem
-            // 
-            this.doktorSilToolStripMenuItem.Name = "doktorSilToolStripMenuItem";
-            this.doktorSilToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.doktorSilToolStripMenuItem.Text = "Doktor Sil";
-            this.doktorSilToolStripMenuItem.Click += new System.EventHandler(this.doktorSilToolStripMenuItem_Click);
-            // 
             // doktorDüzenleToolStripMenuItem
             // 
             this.doktorDüzenleToolStripMenuItem.Name = "doktorDüzenleToolStripMenuItem";
@@ -149,7 +134,7 @@
             // 
             this.poliklinikİşlemleriToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.poliklinikEkleToolStripMenuItem1,
-            this.poliklinikÇıkarToolStripMenuItem});
+            this.poliklinikBilgisiGösterToolStripMenuItem});
             this.poliklinikİşlemleriToolStripMenuItem1.Name = "poliklinikİşlemleriToolStripMenuItem1";
             this.poliklinikİşlemleriToolStripMenuItem1.Size = new System.Drawing.Size(114, 20);
             this.poliklinikİşlemleriToolStripMenuItem1.Text = "Poliklinik İşlemleri";
@@ -157,16 +142,9 @@
             // poliklinikEkleToolStripMenuItem1
             // 
             this.poliklinikEkleToolStripMenuItem1.Name = "poliklinikEkleToolStripMenuItem1";
-            this.poliklinikEkleToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.poliklinikEkleToolStripMenuItem1.Size = new System.Drawing.Size(193, 22);
             this.poliklinikEkleToolStripMenuItem1.Text = "Poliklinik Ekle";
             this.poliklinikEkleToolStripMenuItem1.Click += new System.EventHandler(this.poliklinikEkleToolStripMenuItem1_Click);
-            // 
-            // poliklinikÇıkarToolStripMenuItem
-            // 
-            this.poliklinikÇıkarToolStripMenuItem.Name = "poliklinikÇıkarToolStripMenuItem";
-            this.poliklinikÇıkarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.poliklinikÇıkarToolStripMenuItem.Text = "Poliklinik Çıkar";
-            this.poliklinikÇıkarToolStripMenuItem.Click += new System.EventHandler(this.poliklinikÇıkarToolStripMenuItem_Click);
             // 
             // yardımToolStripMenuItem
             // 
@@ -193,79 +171,31 @@
             // 
             // poliklinikTabPage
             // 
-            this.poliklinikTabPage.Controls.Add(this.groupBox1);
-            this.poliklinikTabPage.Controls.Add(this.poliklinikButton);
-            this.poliklinikTabPage.Controls.Add(this.poliklinikSilButton);
+            this.poliklinikTabPage.Controls.Add(this.poliklinikBilgiButton);
             this.poliklinikTabPage.Controls.Add(this.poliklinikEkleButton);
             this.poliklinikTabPage.Location = new System.Drawing.Point(4, 22);
             this.poliklinikTabPage.Name = "poliklinikTabPage";
             this.poliklinikTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.poliklinikTabPage.Size = new System.Drawing.Size(567, 120);
+            this.poliklinikTabPage.Size = new System.Drawing.Size(403, 119);
             this.poliklinikTabPage.TabIndex = 3;
             this.poliklinikTabPage.Text = "Poliklinik İşlemleri";
             this.poliklinikTabPage.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // poliklinikBilgiButton
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(390, 16);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(157, 69);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Bekleyen/Tedavi Olan";
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton2.Location = new System.Drawing.Point(26, 46);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(89, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Tedavi Olmuş";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton1.Location = new System.Drawing.Point(26, 18);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(99, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Bekleyen Hasta";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // poliklinikButton
-            // 
-            this.poliklinikButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.poliklinikButton.Location = new System.Drawing.Point(390, 91);
-            this.poliklinikButton.Name = "poliklinikButton";
-            this.poliklinikButton.Size = new System.Drawing.Size(157, 23);
-            this.poliklinikButton.TabIndex = 2;
-            this.poliklinikButton.Text = "Hasta Sayısını Göster";
-            this.poliklinikButton.UseVisualStyleBackColor = true;
-            // 
-            // poliklinikSilButton
-            // 
-            this.poliklinikSilButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.poliklinikSilButton.Location = new System.Drawing.Point(220, 34);
-            this.poliklinikSilButton.Name = "poliklinikSilButton";
-            this.poliklinikSilButton.Size = new System.Drawing.Size(127, 61);
-            this.poliklinikSilButton.TabIndex = 1;
-            this.poliklinikSilButton.Text = "Poliklinik Sil";
-            this.poliklinikSilButton.UseVisualStyleBackColor = true;
-            this.poliklinikSilButton.Click += new System.EventHandler(this.poliklinikSilButton_Click);
+            this.poliklinikBilgiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.poliklinikBilgiButton.Location = new System.Drawing.Point(228, 28);
+            this.poliklinikBilgiButton.Name = "poliklinikBilgiButton";
+            this.poliklinikBilgiButton.Size = new System.Drawing.Size(127, 61);
+            this.poliklinikBilgiButton.TabIndex = 1;
+            this.poliklinikBilgiButton.Text = "Poliklinik Bilgisi Göster";
+            this.poliklinikBilgiButton.UseVisualStyleBackColor = true;
+            this.poliklinikBilgiButton.Click += new System.EventHandler(this.poliklinikBilgiButton_Click);
             // 
             // poliklinikEkleButton
             // 
             this.poliklinikEkleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.poliklinikEkleButton.Location = new System.Drawing.Point(19, 33);
+            this.poliklinikEkleButton.Location = new System.Drawing.Point(41, 28);
             this.poliklinikEkleButton.Name = "poliklinikEkleButton";
             this.poliklinikEkleButton.Size = new System.Drawing.Size(127, 61);
             this.poliklinikEkleButton.TabIndex = 0;
@@ -276,12 +206,11 @@
             // doktorListTabPage
             // 
             this.doktorListTabPage.Controls.Add(this.doktorDuzenleButton);
-            this.doktorListTabPage.Controls.Add(this.doktorSilButton);
             this.doktorListTabPage.Controls.Add(this.doktorEkleButton);
             this.doktorListTabPage.Location = new System.Drawing.Point(4, 22);
             this.doktorListTabPage.Name = "doktorListTabPage";
             this.doktorListTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.doktorListTabPage.Size = new System.Drawing.Size(567, 120);
+            this.doktorListTabPage.Size = new System.Drawing.Size(403, 119);
             this.doktorListTabPage.TabIndex = 2;
             this.doktorListTabPage.Text = "Doktor İşlemleri";
             this.doktorListTabPage.UseVisualStyleBackColor = true;
@@ -289,7 +218,7 @@
             // doktorDuzenleButton
             // 
             this.doktorDuzenleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.doktorDuzenleButton.Location = new System.Drawing.Point(403, 36);
+            this.doktorDuzenleButton.Location = new System.Drawing.Point(241, 36);
             this.doktorDuzenleButton.Name = "doktorDuzenleButton";
             this.doktorDuzenleButton.Size = new System.Drawing.Size(117, 62);
             this.doktorDuzenleButton.TabIndex = 2;
@@ -297,21 +226,10 @@
             this.doktorDuzenleButton.UseVisualStyleBackColor = true;
             this.doktorDuzenleButton.Click += new System.EventHandler(this.doktorDuzenleButton_Click);
             // 
-            // doktorSilButton
-            // 
-            this.doktorSilButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.doktorSilButton.Location = new System.Drawing.Point(220, 36);
-            this.doktorSilButton.Name = "doktorSilButton";
-            this.doktorSilButton.Size = new System.Drawing.Size(117, 62);
-            this.doktorSilButton.TabIndex = 1;
-            this.doktorSilButton.Text = "Doktor Sil";
-            this.doktorSilButton.UseVisualStyleBackColor = true;
-            this.doktorSilButton.Click += new System.EventHandler(this.doktorSilButton_Click);
-            // 
             // doktorEkleButton
             // 
             this.doktorEkleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.doktorEkleButton.Location = new System.Drawing.Point(34, 36);
+            this.doktorEkleButton.Location = new System.Drawing.Point(40, 36);
             this.doktorEkleButton.Name = "doktorEkleButton";
             this.doktorEkleButton.Size = new System.Drawing.Size(117, 62);
             this.doktorEkleButton.TabIndex = 0;
@@ -329,7 +247,7 @@
             this.hastaKabulTabPage.Location = new System.Drawing.Point(4, 22);
             this.hastaKabulTabPage.Name = "hastaKabulTabPage";
             this.hastaKabulTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.hastaKabulTabPage.Size = new System.Drawing.Size(567, 120);
+            this.hastaKabulTabPage.Size = new System.Drawing.Size(403, 119);
             this.hastaKabulTabPage.TabIndex = 0;
             this.hastaKabulTabPage.Text = "Hasta İşlemleri";
             this.hastaKabulTabPage.UseVisualStyleBackColor = true;
@@ -337,7 +255,7 @@
             // muayeneEkleButton
             // 
             this.muayeneEkleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.muayeneEkleButton.Location = new System.Drawing.Point(395, 27);
+            this.muayeneEkleButton.Location = new System.Drawing.Point(277, 27);
             this.muayeneEkleButton.Name = "muayeneEkleButton";
             this.muayeneEkleButton.Size = new System.Drawing.Size(111, 62);
             this.muayeneEkleButton.TabIndex = 6;
@@ -348,7 +266,7 @@
             // hastaDuzenleButton
             // 
             this.hastaDuzenleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hastaDuzenleButton.Location = new System.Drawing.Point(219, 27);
+            this.hastaDuzenleButton.Location = new System.Drawing.Point(149, 27);
             this.hastaDuzenleButton.Name = "hastaDuzenleButton";
             this.hastaDuzenleButton.Size = new System.Drawing.Size(111, 62);
             this.hastaDuzenleButton.TabIndex = 5;
@@ -359,7 +277,7 @@
             // hastaKabulButton
             // 
             this.hastaKabulButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hastaKabulButton.Location = new System.Drawing.Point(41, 27);
+            this.hastaKabulButton.Location = new System.Drawing.Point(15, 27);
             this.hastaKabulButton.Name = "hastaKabulButton";
             this.hastaKabulButton.Size = new System.Drawing.Size(111, 62);
             this.hastaKabulButton.TabIndex = 3;
@@ -375,16 +293,16 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(575, 146);
+            this.tabControl1.Size = new System.Drawing.Size(411, 145);
             this.tabControl1.TabIndex = 0;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hastaSayisiStatusStripLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 189);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 179);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(624, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(434, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -394,11 +312,18 @@
             this.hastaSayisiStatusStripLabel.Size = new System.Drawing.Size(12, 17);
             this.hastaSayisiStatusStripLabel.Text = "-";
             // 
+            // poliklinikBilgisiGösterToolStripMenuItem
+            // 
+            this.poliklinikBilgisiGösterToolStripMenuItem.Name = "poliklinikBilgisiGösterToolStripMenuItem";
+            this.poliklinikBilgisiGösterToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.poliklinikBilgisiGösterToolStripMenuItem.Text = "Poliklinik Bilgisi Göster";
+            this.poliklinikBilgisiGösterToolStripMenuItem.Click += new System.EventHandler(this.poliklinikBilgisiGösterToolStripMenuItem_Click);
+            // 
             // HospitalMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 211);
+            this.ClientSize = new System.Drawing.Size(434, 201);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
@@ -408,8 +333,6 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.poliklinikTabPage.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.doktorListTabPage.ResumeLayout(false);
             this.hastaKabulTabPage.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -427,24 +350,16 @@
         private System.Windows.Forms.ToolStripMenuItem hastaDüzenleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem doktorİşlemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem doktorEkleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem doktorSilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem poliklinikİşlemleriToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem poliklinikEkleToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem poliklinikÇıkarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iletişimToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem doktorDüzenleToolStripMenuItem;
         private System.Windows.Forms.TabPage poliklinikTabPage;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button poliklinikButton;
-        private System.Windows.Forms.Button poliklinikSilButton;
         private System.Windows.Forms.Button poliklinikEkleButton;
         private System.Windows.Forms.TabPage doktorListTabPage;
         private System.Windows.Forms.Button doktorDuzenleButton;
-        private System.Windows.Forms.Button doktorSilButton;
         private System.Windows.Forms.Button doktorEkleButton;
         private System.Windows.Forms.TabPage hastaKabulTabPage;
         private System.Windows.Forms.Button hastaDuzenleButton;
@@ -454,5 +369,7 @@
         private System.Windows.Forms.ToolStripStatusLabel hastaSayisiStatusStripLabel;
         private System.Windows.Forms.ToolStripMenuItem muayeneEkleToolStripMenuItem;
         private System.Windows.Forms.Button muayeneEkleButton;
+        private System.Windows.Forms.Button poliklinikBilgiButton;
+        private System.Windows.Forms.ToolStripMenuItem poliklinikBilgisiGösterToolStripMenuItem;
     }
 }

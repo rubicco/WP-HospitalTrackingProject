@@ -23,9 +23,11 @@ namespace WindowsFormsApplication1.LogInPages
             Dispose();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void sorgulaButton_Click(object sender, EventArgs e)
         {
-
+            this.Dispose();
+            PatientPages.hastaBilgiPage hbp = new PatientPages.hastaBilgiPage(tcTextBox.Text);
+            hbp.ShowDialog();       
         }
     }
 }

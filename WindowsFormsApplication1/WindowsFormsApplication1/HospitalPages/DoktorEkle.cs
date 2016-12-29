@@ -46,16 +46,29 @@ namespace WindowsFormsApplication1.HospitalPages
             string poliklinik = poliklinikComboBox.Text;
             string brans = bransTextBox.Text;
             string unvan = unvanTextBox.Text;
-            DbConnection.connect();
+            
             DbConnection.execQuery("SELECT POL_ID FROM POLIKLINIK WHERE POL_NAME='" + poliklinik + "'");
             int polID = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
             DbConnection.execQuery("select doktor_no from system_table");
             int doktor_no = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
-            String query = String.Format("insert into DOKTOR(DOKTOR_ID, TC_KIMLIK, FNAME, LNAME, CİNSİYET, CEP_TEL, IS_TEL, ADRES, BRANS, UNVAN, POL_ID, DOGUM_TARIHI) VALUES({0},'{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}',{10},'{11}')", doktor_no, TCkimlik, ad, soyad, cinsiyet, cepTel, isTel, adres, brans, unvan, polID, dTarihi);
+            String query = String.Format("insert into DOKTOR(DOKTOR_ID, TC_KIMLIK, FNAME, LNAME, CINSIYET, CEP_TEL, IS_TEL, ADRES, BRANS, UNVAN, POL_ID, DOGUM_TARIHI) VALUES({0},'{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}',{10},'{11}')", doktor_no, TCkimlik, ad, soyad, cinsiyet, cepTel, isTel, adres, brans, unvan, polID, dTarihi);
             DbConnection.execQuery(query);
             doktor_no++;
             DbConnection.execQuery("UPDATE SYSTEM_TABLE SET DOKTOR_NO=" + doktor_no);
             Dispose();
+        }
+
+        private void DoktorEkle_Load(object sender, EventArgs e)
+        {
+            //DbConnection.connect();
+            DbConnection.execQuery("select pol_no from system_table");
+            int polSayisi = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
+            DbConnection.execQuery("select pol_name from poliklinik");
+            for (int i = 0; i < polSayisi - 1; i++)
+            {
+                poliklinikComboBox.Items.Add(DbConnection.dr["pol_name"].ToString());
+                DbConnection.dr.Read();
+            }
         }
     }
 }

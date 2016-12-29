@@ -51,6 +51,7 @@
     <Reference Include="Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DoctorPages\DoctorMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     <Compile Include="DoctorPages\MuayeneBilgiPage.Designer.cs">
       <DependentUpon>MuayeneBilgiPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoctorPages\MuayeneKarsilastirmaMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorPages\MuayeneKarsilastirmaMDI.Designer.cs">
+      <DependentUpon>MuayeneKarsilastirmaMDI.cs</DependentUpon>
+    </Compile>
     <Compile Include="HospitalClass\MedicalExamination.cs" />
     <Compile Include="HospitalClass\Poliklinik.cs" />
     <Compile Include="HospitalPages\DoktorDuzenle.cs">
@@ -99,12 +111,6 @@
     </Compile>
     <Compile Include="HospitalPages\DoktorEkle.Designer.cs">
       <DependentUpon>DoktorEkle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HospitalPages\DoktorSil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HospitalPages\DoktorSil.Designer.cs">
-      <DependentUpon>DoktorSil.cs</DependentUpon>
     </Compile>
     <Compile Include="HospitalPages\HastaDuzenle.cs">
       <SubType>Form</SubType>
@@ -130,17 +136,17 @@
     <Compile Include="HospitalPages\MuayeneEkle.Designer.cs">
       <DependentUpon>MuayeneEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="HospitalPages\PoliklinikBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HospitalPages\PoliklinikBilgileri.Designer.cs">
+      <DependentUpon>PoliklinikBilgileri.cs</DependentUpon>
+    </Compile>
     <Compile Include="HospitalPages\PoliklinikEkle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HospitalPages\PoliklinikEkle.Designer.cs">
       <DependentUpon>PoliklinikEkle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HospitalPages\PoliklinikSil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HospitalPages\PoliklinikSil.Designer.cs">
-      <DependentUpon>PoliklinikSil.cs</DependentUpon>
     </Compile>
     <Compile Include="LogInPages\DoctorLoginForm.cs">
       <SubType>Form</SubType>
@@ -174,8 +180,8 @@
     <Compile Include="PatientPages\hastaBilgiPage.Designer.cs">
       <DependentUpon>hastaBilgiPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonClass\Doctor.cs" />
-    <Compile Include="PersonClass\Patient.cs" />
+    <Compile Include="HospitalClass\Doctor.cs" />
+    <Compile Include="HospitalClass\Patient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DoctorPages\DoctorMainPage.resx">
@@ -190,14 +196,14 @@
     <EmbeddedResource Include="DoctorPages\MuayeneBilgiPage.resx">
       <DependentUpon>MuayeneBilgiPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoctorPages\MuayeneKarsilastirmaMDI.resx">
+      <DependentUpon>MuayeneKarsilastirmaMDI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HospitalPages\DoktorDuzenle.resx">
       <DependentUpon>DoktorDuzenle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HospitalPages\DoktorEkle.resx">
       <DependentUpon>DoktorEkle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HospitalPages\DoktorSil.resx">
-      <DependentUpon>DoktorSil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HospitalPages\HastaDuzenle.resx">
       <DependentUpon>HastaDuzenle.cs</DependentUpon>
@@ -211,11 +217,11 @@
     <EmbeddedResource Include="HospitalPages\MuayeneEkle.resx">
       <DependentUpon>MuayeneEkle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HospitalPages\PoliklinikBilgileri.resx">
+      <DependentUpon>PoliklinikBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HospitalPages\PoliklinikEkle.resx">
       <DependentUpon>PoliklinikEkle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HospitalPages\PoliklinikSil.resx">
-      <DependentUpon>PoliklinikSil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInPages\DoctorLoginForm.resx">
       <DependentUpon>DoctorLoginForm.cs</DependentUpon>
@@ -237,6 +243,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
