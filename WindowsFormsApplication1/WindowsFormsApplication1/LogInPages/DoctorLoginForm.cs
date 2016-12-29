@@ -28,16 +28,15 @@ namespace WindowsFormsApplication1.LogInPages
             String id = kullaniciAdiTextBox.Text;
             String pw = parolaTextBox.Text;
             LogInClass.checkEmptyTextBox(id,pw);
+            
             if (LogInClass.checkLogIn(id, pw))
             {
-                DoctorPages.DoctorMainPage doctorMain = new DoctorPages.DoctorMainPage();
+                DoctorPages.DoctorMainPage doctorMain = new DoctorPages.DoctorMainPage(id);
                 doctorMain.Show();
-                this.Dispose();
+                this.Dispose();                
             }
 
-            
-        }
 
-  
+        }
     }
 }

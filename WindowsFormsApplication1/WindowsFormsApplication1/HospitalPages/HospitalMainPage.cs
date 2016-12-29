@@ -65,11 +65,6 @@ namespace WindowsFormsApplication1.HospitalPages
             hastaDuzenleFormAcma();
         }
 
-        private void doktorSilButton_Click(object sender, EventArgs e)
-        {
-            doktorSilFormAcma();
-        }
-
         private void doktorEkleButton_Click(object sender, EventArgs e)
         {
             doktorEkleFormAcma();
@@ -85,11 +80,6 @@ namespace WindowsFormsApplication1.HospitalPages
             doktorEkleFormAcma();
         }
 
-        private void doktorSilToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            doktorSilFormAcma();
-        }
-
         private void doktorDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             doktorDuzenleFormAcma();
@@ -99,12 +89,6 @@ namespace WindowsFormsApplication1.HospitalPages
         {
             DoktorEkle doktorEkleForm = new DoktorEkle();
             doktorEkleForm.ShowDialog();
-        }
-
-        private void doktorSilFormAcma()
-        {
-            DoktorSil doktorSilForm = new DoktorSil();
-            doktorSilForm.ShowDialog();
         }
 
         private void doktorDuzenleFormAcma()
@@ -118,25 +102,9 @@ namespace WindowsFormsApplication1.HospitalPages
             poliklinikEkleFormAcma();
         }
 
-        private void poliklinikÇıkarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            poliklinikSilFormAcma();
-        }
-
         private void poliklinikEkleButton_Click(object sender, EventArgs e)
         {
             poliklinikEkleFormAcma();
-        }
-
-        private void poliklinikSilButton_Click(object sender, EventArgs e)
-        {
-            poliklinikSilFormAcma();
-        }
-
-        private void poliklinikSilFormAcma()
-        {
-            PoliklinikSil poliklinikSilForm = new PoliklinikSil();
-            poliklinikSilForm.ShowDialog();
         }
 
         private void poliklinikEkleFormAcma()
@@ -159,6 +127,22 @@ namespace WindowsFormsApplication1.HospitalPages
         private void muayeneEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             muayeneEkleFormAcma();
+        }
+
+        private void poliklinikBilgiButton_Click(object sender, EventArgs e)
+        {
+            poliklinikBilgileriForm();
+        }
+
+        private void poliklinikBilgileriForm()
+        {
+            PoliklinikBilgileri pbForm = new PoliklinikBilgileri();
+            pbForm.ShowDialog();
+        }
+
+        private void poliklinikBilgisiGösterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            poliklinikBilgileriForm();
         }
     }
 }

@@ -14,7 +14,10 @@ namespace WindowsFormsApplication1
         public static OracleConnection conn;
         public static string oradb = "Data Source=localhost:1521/XE;User Id=hosp;Password=1234qwer;";
         public static OracleDataReader dr;
-
+        
+        public static OracleDataReader[] additionalDreaders = new OracleDataReader[5];
+        public static int drIndex=0;
+        
         public static void connect()
         {
             conn = new OracleConnection(oradb);  // C#
@@ -29,6 +32,15 @@ namespace WindowsFormsApplication1
             cmd.CommandType = CommandType.Text;
             dr = cmd.ExecuteReader();
             dr.Read();
+        }
+
+        public static void createTable(String query)
+        {
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.CommandType = CommandType.Text;
+            dr = cmd.ExecuteReader();
         }
 
         public void connection()
@@ -48,5 +60,31 @@ namespace WindowsFormsApplication1
             conn.Dispose();
         }
 
+        
+        public static void execAdditionalQuery(String query)
+        {
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.CommandType = CommandType.Text;
+            additionalDreaders[drIndex] = cmd.ExecuteReader();
+            additionalDreaders[drIndex].Read();
+            if (drIndex == 4)
+                drIndex = 0;
+            else
+                drIndex++;         
+        }
+
+        public static void execAdditionalQueryN(String query,int slot)
+        {
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+            cmd.CommandText = query;
+            cmd.CommandType = CommandType.Text;
+            additionalDreaders[slot] = cmd.ExecuteReader();
+            additionalDreaders[slot].Read();
+        }
+        
+        
     }
 }

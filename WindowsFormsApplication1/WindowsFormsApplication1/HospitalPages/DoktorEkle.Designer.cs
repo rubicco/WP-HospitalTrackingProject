@@ -265,11 +265,6 @@
             // poliklinikComboBox
             // 
             this.poliklinikComboBox.FormattingEnabled = true;
-            this.poliklinikComboBox.Items.AddRange(new object[] {
-            "-",
-            "KBB",
-            "Göz",
-            "Cildiye"});
             this.poliklinikComboBox.Location = new System.Drawing.Point(406, 131);
             this.poliklinikComboBox.Name = "poliklinikComboBox";
             this.poliklinikComboBox.Size = new System.Drawing.Size(209, 21);
@@ -371,6 +366,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "DoktorEkle";
             this.Text = "DoktorEkle";
+            this.Load += new System.EventHandler(this.DoktorEkle_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
