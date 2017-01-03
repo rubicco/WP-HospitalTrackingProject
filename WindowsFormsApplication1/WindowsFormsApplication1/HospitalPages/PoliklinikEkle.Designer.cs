@@ -41,19 +41,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(26, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 17);
+            this.label1.Size = new System.Drawing.Size(69, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Poliklinik Adı:";
             // 
             // poliklinikAdiTextBox
             // 
-            this.poliklinikAdiTextBox.Location = new System.Drawing.Point(150, 20);
-            this.poliklinikAdiTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.poliklinikAdiTextBox.Location = new System.Drawing.Point(112, 16);
             this.poliklinikAdiTextBox.Name = "poliklinikAdiTextBox";
-            this.poliklinikAdiTextBox.Size = new System.Drawing.Size(188, 22);
+            this.poliklinikAdiTextBox.Size = new System.Drawing.Size(142, 20);
             this.poliklinikAdiTextBox.TabIndex = 2;
             // 
             // toolStrip1
@@ -63,7 +61,7 @@
             this.saveToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(471, 56);
+            this.toolStrip1.Size = new System.Drawing.Size(353, 56);
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -80,15 +78,15 @@
             this.saveToolStripButton.Size = new System.Drawing.Size(53, 53);
             this.saveToolStripButton.Text = "&Save";
             this.saveToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.poliklinikAdiTextBox);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(37, 100);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(28, 81);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(376, 64);
+            this.panel1.Size = new System.Drawing.Size(282, 52);
             this.panel1.TabIndex = 9;
             // 
             // label3
@@ -96,22 +94,20 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.DeepPink;
-            this.label3.Location = new System.Drawing.Point(123, 31);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(92, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 39);
+            this.label3.Size = new System.Drawing.Size(217, 31);
             this.label3.TabIndex = 10;
             this.label3.Text = "Poliklinik Ekleme";
             // 
             // PoliklinikEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 196);
+            this.ClientSize = new System.Drawing.Size(353, 159);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PoliklinikEkle";
             this.Text = "PoliklinikEkle";
             this.toolStrip1.ResumeLayout(false);
