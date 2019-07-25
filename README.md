@@ -1,4 +1,4 @@
-This application is developed for Windows Application Programming Course (2015) at Ege University. It has only Turkish language option. Since it is a course project, it has only simple management application abilities such as insert, delete, view and edit.
+This application is developed for Windows Application Programming Course (2017) at Ege University. It has only Turkish language option. Since it is a course project, it has only simple management application abilities such as insert, delete, view and edit.
 
 Programming Language: C#  
 Database Technology:  Oracle SQL
