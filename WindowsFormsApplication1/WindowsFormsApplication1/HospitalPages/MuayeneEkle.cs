@@ -24,25 +24,31 @@ namespace WindowsFormsApplication1.HospitalPages
                 MessageBox.Show("Lütfen Gerekli Alanları Doldurunuz!");
                 return;
             }
-            string tcKimlik = muayeneEkleTCKimlikTextBox.Text;
+            string tcKimlik = muayeneEkleTCKimlikTextBox.Text;         
             DateTime date = muayeneTarihiDateTimePicker.Value;
             string muayeneTarihi = date.ToString("dd/MM/yyyy");
             string poliklinik = muayeneEklePoliklinikComboBox.Text;
             string doktor = muayeneDoktorListBox.SelectedItem.ToString();
             string sikayet = muayeneSikayetTextBox.Text;
-            string bos = "";
+            string bos = "-";
 
-            DbConnection.connect();
-            DbConnection.execQuery("select muayene_no from system_table");
-            int muayene_no = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
             DbConnection.execQuery("select hasta_id from hasta where tc_kimlik='" + tcKimlik + "'");
+            if (DbConnection.dr.HasRows == false)
+            {
+                MessageBox.Show(tcKimlik + " kimliğine sahip hasta bulunmamakta.", "Hata!", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                
+                return;
+            }                
             int hasta_no = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
+            DbConnection.execQuery("select muayene_no from system_table");
+            int muayene_no = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());            
             DbConnection.execQuery("select pol_id from poliklinik where pol_name='" + poliklinik + "'");
             int polID = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
             string[] adSoyad = doktor.Split(' ');
             DbConnection.execQuery("select doktor_id from doktor where fname='" + adSoyad[0] + "' and lname='" + adSoyad[1] + "'");
             int doktor_no = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
             String query = String.Format("insert into muayene(M_NO, HASTA_NO, DOKTOR_NO, SIKAYET, BULGU, POL_NO, TESHIS, M_TARIHI) values({0}, {1}, {2}, '{3}', '{4}', {5}, '{6}', '{7}')", muayene_no, hasta_no, doktor_no, sikayet, bos, polID, bos, muayeneTarihi);
+            
             DbConnection.execQuery(query);
             muayene_no++;
             DbConnection.execQuery("update system_table set muayene_no=" + muayene_no);
@@ -51,7 +57,7 @@ namespace WindowsFormsApplication1.HospitalPages
 
         private void MuayeneEkle_Load(object sender, EventArgs e)
         {
-            DbConnection.connect();
+            //DbConnection.connect();
             DbConnection.execQuery("select pol_no from system_table");
             int polSayisi = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
             DbConnection.execQuery("select pol_name from poliklinik");
@@ -65,7 +71,7 @@ namespace WindowsFormsApplication1.HospitalPages
         private void muayeneEklePoliklinikComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             muayeneDoktorListBox.Items.Clear();
-            DbConnection.connect();
+            //DbConnection.connect();
             DbConnection.execQuery("select pol_id from poliklinik where pol_name='" + muayeneEklePoliklinikComboBox.SelectedItem.ToString() + "'");
             int polID = Convert.ToInt32(DbConnection.dr.GetValue(0).ToString());
             DbConnection.execQuery("select count(*) from doktor where pol_id = " + polID);

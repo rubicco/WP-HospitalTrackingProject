@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.unvanTextBox = new System.Windows.Forms.TextBox();
@@ -39,11 +40,9 @@
             this.kadinRadioButton = new System.Windows.Forms.RadioButton();
             this.erkekRadioButton = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
             this.TCKimlikNoTextBox = new System.Windows.Forms.MaskedTextBox();
             this.isTelTextBox = new System.Windows.Forms.MaskedTextBox();
             this.cepTelTextBox = new System.Windows.Forms.MaskedTextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.poliklinikComboBox = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -55,8 +54,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.soyadTextBox = new System.Windows.Forms.TextBox();
             this.adTextBox = new System.Windows.Forms.TextBox();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.label12 = new System.Windows.Forms.Label();
+            this.TCinputMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.guncelleButton = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.doktorDogumTarihiDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label15 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,19 +87,35 @@
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.AutoSize = false;
+            this.saveToolStripButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Enabled = false;
+            this.saveToolStripButton.Image = global::WindowsFormsApplication1.Properties.Resources.save;
+            this.saveToolStripButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.saveToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(53, 53);
+            this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.doktorDogumTarihiDateTimePicker);
+            this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.unvanTextBox);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.bransTextBox);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.emailTextBox);
             this.panel1.Controls.Add(this.TCKimlikNoTextBox);
             this.panel1.Controls.Add(this.isTelTextBox);
             this.panel1.Controls.Add(this.cepTelTextBox);
-            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.poliklinikComboBox);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
@@ -116,7 +135,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(347, 220);
+            this.label8.Enabled = false;
+            this.label8.Location = new System.Drawing.Point(347, 187);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 13);
             this.label8.TabIndex = 30;
@@ -124,7 +144,8 @@
             // 
             // unvanTextBox
             // 
-            this.unvanTextBox.Location = new System.Drawing.Point(406, 217);
+            this.unvanTextBox.Enabled = false;
+            this.unvanTextBox.Location = new System.Drawing.Point(406, 184);
             this.unvanTextBox.Name = "unvanTextBox";
             this.unvanTextBox.Size = new System.Drawing.Size(209, 20);
             this.unvanTextBox.TabIndex = 29;
@@ -132,7 +153,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(352, 183);
+            this.label6.Enabled = false;
+            this.label6.Location = new System.Drawing.Point(352, 155);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 28;
@@ -140,7 +162,8 @@
             // 
             // bransTextBox
             // 
-            this.bransTextBox.Location = new System.Drawing.Point(406, 180);
+            this.bransTextBox.Enabled = false;
+            this.bransTextBox.Location = new System.Drawing.Point(406, 152);
             this.bransTextBox.Name = "bransTextBox";
             this.bransTextBox.Size = new System.Drawing.Size(209, 20);
             this.bransTextBox.TabIndex = 27;
@@ -149,6 +172,7 @@
             // 
             this.panel2.Controls.Add(this.kadinRadioButton);
             this.panel2.Controls.Add(this.erkekRadioButton);
+            this.panel2.Enabled = false;
             this.panel2.Location = new System.Drawing.Point(114, 83);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(187, 28);
@@ -157,6 +181,7 @@
             // kadinRadioButton
             // 
             this.kadinRadioButton.AutoSize = true;
+            this.kadinRadioButton.Enabled = false;
             this.kadinRadioButton.Location = new System.Drawing.Point(113, 4);
             this.kadinRadioButton.Name = "kadinRadioButton";
             this.kadinRadioButton.Size = new System.Drawing.Size(52, 17);
@@ -168,6 +193,7 @@
             // erkekRadioButton
             // 
             this.erkekRadioButton.AutoSize = true;
+            this.erkekRadioButton.Enabled = false;
             this.erkekRadioButton.Location = new System.Drawing.Point(15, 4);
             this.erkekRadioButton.Name = "erkekRadioButton";
             this.erkekRadioButton.Size = new System.Drawing.Size(53, 17);
@@ -179,21 +205,16 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Enabled = false;
             this.label13.Location = new System.Drawing.Point(61, 89);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(46, 13);
             this.label13.TabIndex = 25;
             this.label13.Text = "Cinsiyet:";
             // 
-            // emailTextBox
-            // 
-            this.emailTextBox.Location = new System.Drawing.Point(114, 221);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(187, 20);
-            this.emailTextBox.TabIndex = 24;
-            // 
             // TCKimlikNoTextBox
             // 
+            this.TCKimlikNoTextBox.Enabled = false;
             this.TCKimlikNoTextBox.Location = new System.Drawing.Point(114, 117);
             this.TCKimlikNoTextBox.Mask = "00000000000";
             this.TCKimlikNoTextBox.Name = "TCKimlikNoTextBox";
@@ -203,6 +224,7 @@
             // 
             // isTelTextBox
             // 
+            this.isTelTextBox.Enabled = false;
             this.isTelTextBox.Location = new System.Drawing.Point(114, 187);
             this.isTelTextBox.Mask = "(999) 000-0000";
             this.isTelTextBox.Name = "isTelTextBox";
@@ -211,30 +233,23 @@
             // 
             // cepTelTextBox
             // 
+            this.cepTelTextBox.Enabled = false;
             this.cepTelTextBox.Location = new System.Drawing.Point(114, 152);
             this.cepTelTextBox.Mask = "(999) 000-0000";
             this.cepTelTextBox.Name = "cepTelTextBox";
             this.cepTelTextBox.Size = new System.Drawing.Size(187, 20);
             this.cepTelTextBox.TabIndex = 21;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(32, 224);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 13);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "E-mail Adresi:";
-            // 
             // poliklinikComboBox
             // 
+            this.poliklinikComboBox.Enabled = false;
             this.poliklinikComboBox.FormattingEnabled = true;
             this.poliklinikComboBox.Items.AddRange(new object[] {
             "-",
             "SGK",
             "Bağ-Kur",
             "Emekli Sandığı"});
-            this.poliklinikComboBox.Location = new System.Drawing.Point(406, 131);
+            this.poliklinikComboBox.Location = new System.Drawing.Point(406, 117);
             this.poliklinikComboBox.Name = "poliklinikComboBox";
             this.poliklinikComboBox.Size = new System.Drawing.Size(209, 21);
             this.poliklinikComboBox.TabIndex = 18;
@@ -242,7 +257,8 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(338, 134);
+            this.label10.Enabled = false;
+            this.label10.Location = new System.Drawing.Point(338, 120);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 13);
             this.label10.TabIndex = 17;
@@ -251,6 +267,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Enabled = false;
             this.label9.Location = new System.Drawing.Point(352, 23);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(37, 13);
@@ -259,6 +276,7 @@
             // 
             // adresTextBox
             // 
+            this.adresTextBox.Enabled = false;
             this.adresTextBox.Location = new System.Drawing.Point(406, 20);
             this.adresTextBox.Multiline = true;
             this.adresTextBox.Name = "adresTextBox";
@@ -269,6 +287,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Enabled = false;
             this.label7.Location = new System.Drawing.Point(39, 187);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 13);
@@ -278,6 +297,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Enabled = false;
             this.label5.Location = new System.Drawing.Point(28, 155);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 13);
@@ -287,6 +307,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Enabled = false;
             this.label4.Location = new System.Drawing.Point(31, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
@@ -296,6 +317,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Enabled = false;
             this.label3.Location = new System.Drawing.Point(62, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
@@ -305,6 +327,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Enabled = false;
             this.label2.Location = new System.Drawing.Point(79, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 13);
@@ -313,6 +336,7 @@
             // 
             // soyadTextBox
             // 
+            this.soyadTextBox.Enabled = false;
             this.soyadTextBox.Location = new System.Drawing.Point(114, 56);
             this.soyadTextBox.Name = "soyadTextBox";
             this.soyadTextBox.Size = new System.Drawing.Size(187, 20);
@@ -320,45 +344,85 @@
             // 
             // adTextBox
             // 
+            this.adTextBox.Enabled = false;
             this.adTextBox.Location = new System.Drawing.Point(114, 20);
             this.adTextBox.Name = "adTextBox";
             this.adTextBox.Size = new System.Drawing.Size(187, 20);
             this.adTextBox.TabIndex = 0;
             // 
-            // saveToolStripButton
-            // 
-            this.saveToolStripButton.AutoSize = false;
-            this.saveToolStripButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = global::WindowsFormsApplication1.Properties.Resources.save;
-            this.saveToolStripButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.saveToolStripButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(53, 53);
-            this.saveToolStripButton.Text = "&Save";
-            this.saveToolStripButton.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(12, 87);
+            this.label12.Location = new System.Drawing.Point(12, 115);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(354, 13);
             this.label12.TabIndex = 12;
             this.label12.Text = "NOT: Sadece düzenlemek istediklerinizi yazıp \'Kaydet\' butonuna tıklayınız.";
             // 
+            // TCinputMaskedTextBox
+            // 
+            this.TCinputMaskedTextBox.Location = new System.Drawing.Point(170, 78);
+            this.TCinputMaskedTextBox.Mask = "00000000000";
+            this.TCinputMaskedTextBox.Name = "TCinputMaskedTextBox";
+            this.TCinputMaskedTextBox.Size = new System.Drawing.Size(81, 20);
+            this.TCinputMaskedTextBox.TabIndex = 27;
+            this.TCinputMaskedTextBox.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            // 
+            // guncelleButton
+            // 
+            this.guncelleButton.Location = new System.Drawing.Point(269, 75);
+            this.guncelleButton.Name = "guncelleButton";
+            this.guncelleButton.Size = new System.Drawing.Size(75, 23);
+            this.guncelleButton.TabIndex = 26;
+            this.guncelleButton.Text = "Güncelle";
+            this.guncelleButton.UseVisualStyleBackColor = true;
+            this.guncelleButton.Click += new System.EventHandler(this.guncelleButton_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(13, 80);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(153, 13);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Doktorun TC numarasını giriniz:";
+            // 
+            // doktorDogumTarihiDateTimePicker
+            // 
+            this.doktorDogumTarihiDateTimePicker.CustomFormat = "dd/mm/yyyy";
+            this.doktorDogumTarihiDateTimePicker.Enabled = false;
+            this.doktorDogumTarihiDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.doktorDogumTarihiDateTimePicker.Location = new System.Drawing.Point(114, 218);
+            this.doktorDogumTarihiDateTimePicker.Name = "doktorDogumTarihiDateTimePicker";
+            this.doktorDogumTarihiDateTimePicker.Size = new System.Drawing.Size(187, 20);
+            this.doktorDogumTarihiDateTimePicker.TabIndex = 32;
+            this.doktorDogumTarihiDateTimePicker.Value = new System.DateTime(2016, 12, 27, 0, 0, 0, 0);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Enabled = false;
+            this.label15.Location = new System.Drawing.Point(28, 221);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(73, 13);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Doğum Tarihi:";
+            // 
             // DoktorDuzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 466);
+            this.ClientSize = new System.Drawing.Size(645, 449);
+            this.Controls.Add(this.TCinputMaskedTextBox);
+            this.Controls.Add(this.guncelleButton);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panel1);
             this.Name = "DoktorDuzenle";
             this.Text = "DoktorDuzenle";
+            this.Load += new System.EventHandler(this.DoktorDuzenle_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -384,11 +448,9 @@
         private System.Windows.Forms.RadioButton kadinRadioButton;
         private System.Windows.Forms.RadioButton erkekRadioButton;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.MaskedTextBox TCKimlikNoTextBox;
         private System.Windows.Forms.MaskedTextBox isTelTextBox;
         private System.Windows.Forms.MaskedTextBox cepTelTextBox;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox poliklinikComboBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -401,5 +463,10 @@
         private System.Windows.Forms.TextBox soyadTextBox;
         private System.Windows.Forms.TextBox adTextBox;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.MaskedTextBox TCinputMaskedTextBox;
+        private System.Windows.Forms.Button guncelleButton;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker doktorDogumTarihiDateTimePicker;
+        private System.Windows.Forms.Label label15;
     }
 }

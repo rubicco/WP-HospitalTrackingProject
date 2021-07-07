@@ -9,9 +9,6 @@ namespace WindowsFormsApplication1.LogInPages
 {
     class LogInClass
     {
-
-
-
         public static void checkEmptyTextBox(String id, String pw)
         {
             if (id == "")
@@ -25,11 +22,11 @@ namespace WindowsFormsApplication1.LogInPages
 
         public static bool checkLogIn(String id, String pw)
         {
-            if (id == "asd" && pw == "asd")
+            DbConnection.execQuery("select fname from doktor where tc_kimlik='" + id + "'");
+            if (DbConnection.dr.HasRows==true && pw == "asd")
                 return true;
             else
                 return false;
         }
-
     }
 }

@@ -8,15 +8,15 @@ namespace WindowsFormsApplication1.HospitalClass
 {
     class MedicalExamination
     {
-        private int muayeneNo;
-        private DateTime muayeneDate;
-        private string hastaNo;
-        private string doktorNo;
-        private string sikayet;
-        private string bulgu;
-        private int poliklinikNo;
-        private string[] tetkikler;
-        private string teshis;
+        public int muayeneNo;
+        public DateTime muayeneDate;
+        public string hastaNo;
+        public string doktorNo;
+        public string sikayet;
+        public string bulgu;
+        public int poliklinikNo;
+        public string[] tetkikler;
+        public string teshis;
          
 
         public MedicalExamination()

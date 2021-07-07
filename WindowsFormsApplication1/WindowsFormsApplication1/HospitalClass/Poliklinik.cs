@@ -8,15 +8,13 @@ namespace WindowsFormsApplication1.HospitalClass
 {
     class Poliklinik
     {
-        private int poliklinikID;
-        private string poliklinikAdi;
-        private string poliklinikBolumu;
+        public int poliklinikID;
+        public string poliklinikAdi;
 
-        public Poliklinik(int poliklinikID, string poliklinikAdi, string poliklinikBolumu)
+        public Poliklinik(int poliklinikID, string poliklinikAdi)
         {
             this.poliklinikID = poliklinikID;
             this.poliklinikAdi = poliklinikAdi;
-            this.poliklinikBolumu = poliklinikBolumu;
         }
     }
 }
